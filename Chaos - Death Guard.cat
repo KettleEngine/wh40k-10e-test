@@ -4035,7 +4035,7 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
         </profile>
         <profile id="a30-f657-cd89-33c1" name="Death Guard Rhino" hidden="false" typeId="74f8-5443-9d6d-1f1e" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 DEATH GUARD INFANTRY models. It cannot transport TERMINATOR, CULTIST or POXWALKER models.</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 DEATH GUARD INFANTRY models. It cannot transport TERMINATOR models.</characteristic>
           </characteristics>
         </profile>
         <profile name="Fire Support" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="85e3-0676-68a1-094d">
