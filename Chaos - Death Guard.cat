@@ -1969,7 +1969,7 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Sustained Hits D3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
               </characteristics>
             </profile>
             <profile name="➤ Infected plasma pistol - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="21a5-7b58-6af2-723a">
@@ -1980,7 +1980,7 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol, Sustained Hits D3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3732,7 +3732,7 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2, Lethal Hits</characteristic>
@@ -4035,7 +4035,7 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
         </profile>
         <profile id="a30-f657-cd89-33c1" name="Death Guard Rhino" hidden="false" typeId="74f8-5443-9d6d-1f1e" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 DEATH GUARD INFANTRY models. It cannot transport TERMINATOR, CULTIST or POXWALKER models.</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 DEATH GUARD INFANTRY models. It cannot transport TERMINATOR models.</characteristic>
           </characteristics>
         </profile>
         <profile name="Fire Support" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="85e3-0676-68a1-094d">
