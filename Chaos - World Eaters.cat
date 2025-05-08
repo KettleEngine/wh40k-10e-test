@@ -2264,6 +2264,11 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink id="2c3f-3f45-7946-2cd7" name="Feel No Pain" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Blessings of Khorne" hidden="false" type="rule" id="c25-388f-b412-4ef3" targetId="e68b-b42f-6f7c-4670"/>
         <infoLink name="Relentless Rage" id="f8ca-03ba-d8de-e139" hidden="false" type="rule" targetId="5fc9-9ee8-8657-65b4"/>
       </infoLinks>
