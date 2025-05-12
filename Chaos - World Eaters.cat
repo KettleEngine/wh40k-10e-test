@@ -4952,7 +4952,7 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce2-39c9-cf7b-2863" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Berzerker Warband (New)" hidden="false" id="7d93-f63c-8dbb-f331">
+            <selectionEntry type="upgrade" import="true" name="Berzerker Warband" hidden="false" id="7d93-f63c-8dbb-f331">
               <rules>
                 <rule name="Relentless Rage" id="1234-5678-9abc-def0" hidden="false">
                   <description>Each time a **^^World Eaters^^** unit from your army makes a Charge move, until the end of the turn, add 1 to the Attacks characteristic and add 2 to the Strength characteristic of melee weapons equipped by models in that unit.</description>
