@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="44" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="015a-6212-d737-9044" name="Index - Thousand Sons"/>
   </publications>
@@ -310,24 +310,92 @@
         <categoryLink id="f68a-6e07-0936-90a1" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e74a-04a4-bb91-d5ec" name="Detachment" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
+        <selectionEntryGroup name="Detachment Choice" id="7c59-bd3b-8b1c-1a9e" hidden="false" defaultSelectionEntryId="none">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c19-2e4d-3b70-04d2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5006-5ba3-4f99-7ce1" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dce-dddb-d9e8-ead2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dce-dddb-d9e8-ead3" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="16cb-7eb7-e9fc-f7ea" name="Cult of Magic" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Kindred Sorcery" id="88b4-4f6c-d4eb-9fa2" hidden="false" type="rule" targetId="4258-60ff-8457-a123"/>
-              </infoLinks>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hexwarp Thrallband" hidden="false" id="7b92-cca6-0617-1b6d">
               <infoLinks>
                 <infoLink name="Flow of Magic" id="f955-110f-964e-8e29" hidden="false" type="rule" targetId="9fa6-3c29-04b1-b428"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grand Coven" hidden="false" id="1dbf-3fd5-ef8c-e156">
+              <rules>
+                <rule name="Kindred Sorcery" id="3745-c9a6-b2c5-ebbd" hidden="false">
+                  <description>In your Command phase, you can select one of the abilities listed below to take effect until the start of your next Command phase. You can only select each of these abilities once per battle.
+
+        **Imbued Manifestation**
+        Add 6&quot; to the Range characteristic of ranged Psychic weapons equipped by **^^Thousand Sons^^** models from your army.
+
+        **Psychic Maelstrom**
+        Each time a **^^Thousand Sons^^** model from your army makes an attack with a Psychic weapon, add 1 to the Wound roll.
+
+        **Wrath of the Immaterium**
+        Psychic weapons equipped by **^^Thousand Sons^^** models from your army have the [**DEVASTATING WOUNDS**] ability.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warpmeld Pact" hidden="false" id="b29f-c9bd-9dd6-8ac6">
+              <rules>
+                <rule name="Warpmeld Sacrifice" id="d711-a14c-1bc1-a3f1" hidden="false">
+                  <description>Each time an enemy unit is selected to shoot or fight and one or more **^^Tzeentch Mutant^^** units from your army are selected as a target of one or more of those attacks, each of those **^^Tzeentch Mutant^^** units can make a Warpmeld Sacrifice. If it does, that **^^Tzeentch Mutant^^** unit suffers D3 mortal wounds and until the end of the phase, each time an attack targets that unit, subtract 1 from the Wound roll.
+
+        Each time a **^^Tzeentch Mutant^^** unit from your army is selected to shoot or fight, before selecting its targets, that unit can make a Warpmeld Sacrifice. If it does, that unit suffers D3 mortal wounds and until the end of the phase, each time a model in that unit makes an attack, add 1 to the Wound roll.</description>
+                </rule>
+              </rules>
+              <infoGroups>
+                <infoGroup name="Keywords" id="78af-0610-dd0b-ceb2" hidden="false">
+                  <profiles>
+                    <profile name="Tzaangors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a41-f55f-c44f-9783">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tzaangors^^** units from your army have the **^^Battleline^^** keyword, and while such a unit is not Battle-shocked, add 1 to the Objective Control characteristic of **^^Tzaangor^^** models in that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </infoGroup>
+              </infoGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Changehost of Deceit" hidden="false" id="c93d-f5b2-41a7-d822">
+              <rules>
+                <rule name="Infernal Pacts" id="2d1b-a76e-8c49-f2a1" hidden="false">
+                  <description>**^^Scintillating Legions^^** units from your army have the following the ability:
+
+                **Daemonic Illusions (Aura)**: While a friendly **^^Thousand Sons Psyker^^** unit is within 6&quot; of and visible to this unit, models in that unit have a 4+ invulnerable save against ranged attacks.
+
+                **^^Thousand Sons^^** units from your army have the following ability:
+
+                **Mortal Sorcery (Aura)**: While a friendly **^^Scintillating Legions Psyker^^** unit is within 6&quot; of and visible to this unit, that **^^Scintillating Legions^^** unit has the Cabal of Sorcerers ability.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="4e7a-88c3-c9e8-4b71" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rubricae Phalanx" hidden="false" id="fb77-a9c1-0ed6-3a84">
+              <rules>
+                <rule name="All Is Dust" id="4dff-b11c-42c0-79a1" hidden="false">
+                  <description>Each time an attack with an unmodified Damage characteristic of 1 is allocated to a **^^Rubricae^^** model from your army, add 1 to any armour saving throw made against that attack.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="13b2-9a56-33f5-4c7e" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warpforged Cabal" hidden="false" id="a4f7-5b12-9dc3-e723">
+              <rules>
+                <rule name="Warpfire Infusion" id="7c81-4e97-b583-d129" hidden="false">
+                  <description>Each time a **^^Thousand Sons Vehicle^^** unit from your army is selected to shoot or fight, apply one of the following when resolving those attacks:
+            ■ If that **^^Vehicle^^** unit is within 6&quot; of one or more friendly **^^Thousand Sons Psyker^^** models, you can re-roll one Hit roll, one Wound roll and one Damage roll.
+            ■ Otherwise, you can re-roll one Hit roll, one Wound roll or one Damage roll.
+
+            Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly Demise ability is destroyed while it is within 6&quot; of one or more friendly **^^Thousand Sons Psyker^^** models, that model&apos;s Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of only a 6.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="2da5-18c6-0f37-937a" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -393,7 +461,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="7eb1-7754-4d78-0451" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
-        <infoLink id="3957-5f78-990f-4b6a" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink id="ea4d-825b-575c-da8d" name="Cabal of Sorcerers" hidden="false" targetId="a70c-2007-30f7-a357" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="3"/>
@@ -551,7 +618,6 @@
             <modifier type="append" field="name" value="3"/>
           </modifiers>
         </infoLink>
-        <infoLink id="971b-05b3-eedf-3bf9" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ba7f-0c8d-efeb-5462" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -886,7 +952,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="b1ee-18a1-6187-0c6f" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
-        <infoLink id="38f8-ef51-63ec-5d2d" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3849-e9db-1a61-4439" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1066,7 +1131,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="efcf-2dd2-10ff-4ac0" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
-        <infoLink id="677a-f0d1-692d-1e8c" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1aaa-4fd4-3a5a-1075" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1192,7 +1256,6 @@
             <modifier type="append" field="name" value="D3"/>
           </modifiers>
         </infoLink>
-        <infoLink id="63b4-3d82-44a3-3839" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink name="Firing Deck" hidden="false" type="rule" id="da33-192f-b2a2-1fdc" targetId="13b2-6518-dab3-7ea1">
           <modifiers>
             <modifier type="append" value="2" field="name"/>
@@ -1265,7 +1328,6 @@
             <modifier type="append" field="name" value="5+"/>
           </modifiers>
         </infoLink>
-        <infoLink id="2a10-0ce5-0373-ea8b" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c277-d7ae-063b-5a34" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1337,7 +1399,6 @@
             <modifier type="append" field="name" value="D3"/>
           </modifiers>
         </infoLink>
-        <infoLink id="93f7-77f5-f589-3a76" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink id="2fd7-a2ae-1591-781f" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -1435,7 +1496,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="7775-6118-4b17-8408" name="Damaged: 1-5 wounds remaining" hidden="false" targetId="cb08-29a7-4ffc-2561" type="profile"/>
-        <infoLink id="ee51-1fd1-1456-7832" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bbaa-d8d3-a4bb-10b2" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1655,7 +1715,6 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="79b5-6cc2-df3d-6bda" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink id="e400-324c-53f9-3450" name="Cabal of Sorcerers" hidden="false" targetId="a70c-2007-30f7-a357" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="2"/>
@@ -1865,7 +1924,6 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="9b97-9b79-c4df-1506" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink id="bf9a-8c8b-4bcc-4d93" name="Cabal of Sorcerers" hidden="false" targetId="a70c-2007-30f7-a357" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="2"/>
@@ -1996,7 +2054,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="0609-07a7-eb16-e03b" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
-        <infoLink id="15ec-0281-7774-0baf" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="99d8-adbe-267f-9a11" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -2230,7 +2287,6 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="d780-cc85-b11b-e24e" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink id="c45e-f7a9-beb0-3a27" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="1"/>
@@ -2511,7 +2567,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="702f-8846-519f-c41a" name="Hover" hidden="false" targetId="eec5-5f54-9c03-c305" type="rule"/>
-        <infoLink id="3ec4-a1a3-b4ff-f946" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="180b-b2af-477b-90c5" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -2630,7 +2685,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="21c4-cd75-730c-4d1a" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
-        <infoLink id="78fe-6e06-fd57-943e" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7280-b5c4-b7ca-d0c0" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -2805,7 +2859,6 @@
             <modifier type="append" field="name" value="4"/>
           </modifiers>
         </infoLink>
-        <infoLink id="334e-484d-b8ce-78bb" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink id="c560-daa3-c019-9397" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="db14-7a82-efe9-9784" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
           <modifiers>
@@ -2960,7 +3013,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="2619-47d5-482c-c6df" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
-        <infoLink id="a33d-da83-351f-63d3" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fd09-4249-6561-c802" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -3210,9 +3262,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <infoLinks>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="851c-88d1-39ec-3d1" targetId="4258-60ff-8457-a123"/>
-      </infoLinks>
       <profiles>
         <profile name="Bringers of Change" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b81-e167-c93c-61d4">
           <characteristics>
@@ -3604,7 +3653,6 @@ Wound roll.</characteristic>
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="dfb7-7d34-fe2b-810" targetId="7cb5-dd6b-dd87-ad3b"/>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="ab32-485a-bfb2-7b4a" targetId="4258-60ff-8457-a123"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scarab Occult Sorcerer" hidden="false" id="4aa5-24c5-89bc-7023">
@@ -3974,7 +4022,6 @@ Wound roll.</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="e260-f353-a5d5-25af" targetId="4258-60ff-8457-a123"/>
         <infoLink name="Cabal of Sorcerers" hidden="false" type="rule" id="914b-c3ff-9421-72e3" targetId="a70c-2007-30f7-a357">
           <modifiers>
             <modifier type="append" value="1" field="name"/>
@@ -4085,7 +4132,6 @@ Wound roll.</characteristic>
             <modifier type="append" value="2" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="3f83-37e7-b21b-ce0" targetId="4258-60ff-8457-a123"/>
         <infoLink name="Leader" hidden="false" type="rule" id="30ba-d2d7-3e01-d034" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="5809-dff1-77dc-886e" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="Empyric Guidance (Psychic)" hidden="false" type="profile" id="c6dd-b0d5-68c2-7cab" targetId="660e-ccb9-65e7-19f"/>
@@ -4219,7 +4265,6 @@ Wound roll.</characteristic>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="91ae-8ad9-cfce-9177" targetId="4258-60ff-8457-a123"/>
         <infoLink name="Scouts" hidden="false" type="rule" id="1e7f-4966-feea-6987" targetId="ada6-bac1-ffe0-d6f7">
           <modifiers>
             <modifier type="append" value="6&quot;" field="name"/>
@@ -4492,7 +4537,6 @@ Wound roll.</characteristic>
             <modifier type="append" field="name" value="D3"/>
           </modifiers>
         </infoLink>
-        <infoLink id="a973-3d3d-bdff-2a79" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink name="Cabal of Sorcerers" hidden="false" type="rule" id="cad4-adc4-6d05-cc4" targetId="a70c-2007-30f7-a357">
           <modifiers>
             <modifier type="append" value="2" field="name"/>
@@ -4609,7 +4653,6 @@ Wound roll.</characteristic>
             <modifier type="append" field="name" value="D3"/>
           </modifiers>
         </infoLink>
-        <infoLink id="ebaf-d057-76b7-589b" name="Kindred Sorcery" hidden="false" targetId="4258-60ff-8457-a123" type="rule"/>
         <infoLink name="Cabal of Sorcerers" hidden="false" type="rule" id="5f49-8aac-908f-e0f2" targetId="a70c-2007-30f7-a357">
           <modifiers>
             <modifier type="append" value="2" field="name"/>
@@ -4724,9 +4767,6 @@ Wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="9ef6-14ad-4955-964a" targetId="4258-60ff-8457-a123"/>
-      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="2-5 Enlightened and 1 Aviarch" hidden="false" id="9e3b-1347-c0c9-c6d1" defaultSelectionEntryId="996-bd56-400b-a51e">
           <constraints>
@@ -4905,7 +4945,6 @@ Wound roll.</characteristic>
             <modifier type="append" value="1" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="d511-90d3-fcc1-ba04" targetId="4258-60ff-8457-a123"/>
       </infoLinks>
       <profiles>
         <profile name="Dark Blessing (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3988-e8af-dc19-633d">
@@ -5156,9 +5195,6 @@ Wound roll.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <infoLinks>
-        <infoLink name="Kindred Sorcery" hidden="false" type="rule" id="3f28-2c07-313f-10eb" targetId="4258-60ff-8457-a123"/>
-      </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Twistbray" hidden="false" id="255b-146d-ca61-55fb">
           <selectionEntryGroups>
@@ -6077,106 +6113,466 @@ Wound roll.</characteristic>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="25f1-9949-5ee8-8b93" name="Enhancements" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01db-490f-de71-2ce5" type="max"/>
-        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3a6-0da1-ace0-94eb" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdb1-2496-cd1c-a0d4" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fe2-824a-bb3e-3c42" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="eef6-4b12-1eff-f412" name="Lord of Forbidden Lore" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Lord of Forbidden Lore" hidden="false" id="b846-443f-45e9-d2f5">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13bf-2bee-3ae0-b414" type="notInstanceOf"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="roster" childId="16cb-7eb7-e9fc-f7ea" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1dbf-3fd5-ef8c-e156" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e2fc-4f49-7925-f63f" type="max"/>
-          </constraints>
           <profiles>
-            <profile id="be0e-46c1-5942-1ae7" name="Lord of Forbidden Lore" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+            <profile name="Lord of Forbidden Lore" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aa4b-4e4a-c3d3-0771">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">THOUSAND SONS PSYKER model only. The bearer can be selected to use a Ritual even if another PSYKER from your army has already been selected to use that Ritual this phase.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. Each time the bearer manifests a Ritual, while resolving that Ritual, add 6&quot; to its range.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <comment>Grand Coven</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad32-3f9d-e1bf-965a" includeChildSelections="true"/>
+          </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
-            <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3811-a215-d4a1-d197" name="Umbralefic Crystal" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="860c-9e47-d974-b5b3" type="max"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="Incandaeum" hidden="false" id="0bd8-0ae9-8584-ecb5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1dbf-3fd5-ef8c-e156" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <profiles>
-            <profile id="b1af-8c27-eb4a-e124" name="Umbralefic Crystal" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+            <profile name="Incandaeum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="560a-e6f3-7d09-a9f0">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">THOUSAND SONS model only. Once per battle, in your Command phase, you can remove the bearer’s unit from the battlefield. If you do, in the Reinforcements step of your next Movement phase, set that unit back up  anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Exalted Sorcerer^^** model only. Once per battle, when selecting a Ritual for the bearer to attempt, you can select Doombolt, even if a model from your army has already manifested that Ritual this phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <comment>Grand Coven</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="408b-45ca-e5c8-cbf9" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Umbralefic Crystal" hidden="false" id="9885-a9c2-6a2c-9da1">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1dbf-3fd5-ef8c-e156" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Umbralefic Crystal" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="32c0-de60-bd4e-2b52">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. Once per battle, in your Command phase, if the bearer&apos;s unit is not within Engagement Range of one or more enemy units, you can remove that unit from the battlefield and place it into Strategic Reserves. In the Reinforcements step of your next Movement phase, set that unit back up anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy units.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Grand Coven</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2dc1-e57d-de63-6ba4" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Eldritch Vortex of E&apos;taph" hidden="false" id="5524-2326-c5c1-e189">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1dbf-3fd5-ef8c-e156" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Eldritch Vortex of E&apos;taph" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="821f-8d85-9055-3677">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. Add 1 to the Strength and Damage characteristics of Psychic weapons equipped by the bearer.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Grand Coven</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cb54-dbc7-fc12-4e87" includeChildSelections="true"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warpmeld Dagger" hidden="false" id="ff3a-6be4-e450-7903">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="roster" childId="16cb-7eb7-e9fc-f7ea" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
-        </selectionEntry>
-        <selectionEntry id="7213-a7b3-4c8e-96bc" name="Arcane Vortex" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e272-466e-d1b3-7d71" type="max"/>
-          </constraints>
           <profiles>
-            <profile id="2f15-2068-945f-093d" name="Arcane Vortex" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+            <profile name="Warpmeld Dagger" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c56-4e2f-a7b2-3fc1">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">THOUSAND SONS model only. Add 1 to the Strength and Damage characteristics of Psychic weapons equipped by the bearer.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tzaangor Shaman^^** model only. Each time the bearer attempts a Ritual, just before determining the Psychic test result, the bearer can use this Enhancement. If it does, the bearer suffers D3 mortal wounds; if it is not destroyed as a result, add 1 to that Psychic test result for each of those mortal wounds suffered.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <comment>Warpmeld Pact</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9a91-816c-a45d-486d" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Diamond of Distortion" hidden="false" id="d2db-5680-3844-8287">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Diamond of Distortion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3cbd-8e1f-507c-08de">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tzaangor Shaman^^** model only. While the bearer is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Warpmeld Pact</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a16-f919-9c7f-55b3" includeChildSelections="true"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-            <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="roster" childId="16cb-7eb7-e9fc-f7ea" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntry>
-        <selectionEntry id="1150-7501-d526-d373" name="Athenaen Scrolls" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Bray Lord" hidden="false" id="b730-4d50-9a86-f42d">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13bf-2bee-3ae0-b414" type="notInstanceOf"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="roster" childId="16cb-7eb7-e9fc-f7ea" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0849-fbad-17c7-cfca" type="max"/>
-          </constraints>
           <profiles>
-            <profile id="a3a7-8d9c-4268-aec5" name="Athenaen Scrolls" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+            <profile name="Bray Lord" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="73a5-c6c8-7ab3-a1fd">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">THOUSAND SONS PSYKER model only. In your Command phase, if the bearer is on the battlefield and is not Battle-shocked, it generates you 1 additional Cabal point this phase.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Sorcerer^^** or **^^Infernal Master^^** model only. The bearer has the Scouts 6&quot; ability. During the Declare Battle Formations step, the bearer can be attached to a **^^Tzaangors^^** unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <comment>Warpmeld Pact</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8cb-2c73-ad05-7e6b" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Flowing Flesh" hidden="false" id="e83e-a805-5a10-df21">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Flowing Flesh" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3ea6-ce2a-42a5-6f8a">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tzaangor Shaman^^** model only. The bearer has the Feel No Pain 4+ ability and a Wounds characteristic of 5.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Warpmeld Pact</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="834a-ce66-bcb6-2b86" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Nethershriek Mind-Eater" hidden="false" id="18c7-3d1e-ea79-a2b4">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="c93d-f5b2-41a7-d822" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Nethershriek Mind-Eater" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7f2c-7d9a-e18c-f451">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** or **^^Lord of Change^^** model only. At the start of your Shooting phase, select one enemy unit within 12&quot; of and visible to the bearer. That unit must take a Battle-shock test; if that test is failed, that unit suffers 3 mortal wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Changehost of Deceit</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3e5a-b182-74e4-a3bc" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Diabolic Savant" hidden="false" id="4eca-7b3f-91c8-d74a">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="c93d-f5b2-41a7-d822" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Diabolic Savant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d9a-c432-4b78-ea61">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons Infantry^^** model only. While the bearer is within 6&quot; of one or more friendly **^^Scintillating Legions^^** units, each time the bearer Channels the Warp (pg 67), add 1 to the Psychic test result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Changehost of Deceit</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a46c-d29c-7843-8b15" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Duplicitous Malediction" hidden="false" id="7392-fae6-3d81-5fb2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="c93d-f5b2-41a7-d822" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Duplicitous Malediction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4cd7-a14e-37c8-9b2f">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** or **^^Lord of Change^^** model only. After both players have deployed their armies, select up to three **^^Thousand Sons^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Changehost of Deceit</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b729-e481-c5a2-9f43" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tome of True Names" hidden="false" id="1c8a-7d9b-e24f-8b31">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="c93d-f5b2-41a7-d822" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Tome of True Names" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a91-bfca-4e84-d72e">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons Infantry^^** model only. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has a 2+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Changehost of Deceit</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e8f9-3a7e-2c68-4b19" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Risen Rubricae" hidden="false" id="aa35-c395-5ca9-32e7">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="fb77-a9c1-0ed6-3a84" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Risen Rubricae" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e112-cc89-58bc-8e14">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. At the start of the Declare Battle Formations step, select either two **^^Rubricae^^** units from your army or one other **^^Rubricae^^** unit from your army; models in the selected units have the Infiltrators ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Rubricae Phalanx</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f883-5d8c-1f48-a0c5" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Arcane Thralls (Aura)" hidden="false" id="c0c2-6ba7-01d6-bfde">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="fb77-a9c1-0ed6-3a84" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Arcane Thralls (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="19b9-ad70-a48c-f78e">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. While a friendly **^^Rubricae^^** unit is within 9&quot; of the bearer, you can re-roll Battle-shock tests taken for that unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Rubricae Phalanx</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed30-4582-4b6c-9a10" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lord of the Rubricae" hidden="false" id="5e71-8f85-b7c2-16af">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="fb77-a9c1-0ed6-3a84" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Lord of the Rubricae" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c94a-9a24-06bf-d9e3">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. While the bearer is leading a unit, each time a **^^Rubricae^^** model in that unit makes an attack, add 1 to the Hit roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Rubricae Phalanx</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="10c4-fb65-ff9c-4b26" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stave Abominus" hidden="false" id="4527-9e51-c0a3-841b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="fb77-a9c1-0ed6-3a84" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Stave Abominus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a85-25f9-5e07-be10">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons Infantry^^** model only. The bearer&apos;s melee weapons have the [**^^SUSTAINED HITS D3^^**] and [**^^DEVASTATING WOUNDS^^**] abilities.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Rubricae Phalanx</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ba11-f9b0-1c1e-2a1d" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp Syphon" hidden="false" id="5792-c438-a67d-e91b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a4f7-5b12-9dc3-e723" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warp Syphon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c45d-6713-98a8-4e77">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. While the bearer is within 6&quot; of one or more friendly **^^Thousand Sons Vehicle^^** units, each time the bearer Channels the Warp (pg 67), after you roll that additional D6 but before checking for doubles or triples, the bearer can use this Enhancement. If it does, select one of those **^^Vehicle^^** units; that **^^Vehicle^^** unit suffers 1 mortal wound and you can re-roll that additional D6.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Warpforged Cabal</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ba1e-9843-71a8-b4c9" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Perplexing Cloak" hidden="false" id="6d81-e354-9c87-f29a">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a4f7-5b12-9dc3-e723" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Perplexing Cloak" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e784-2a68-47c1-a5fb">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons Infantry^^** model only. While the bearer is within 3&quot; of one or more friendly **^^Thousand Sons Vehicle^^** units, the bearer has the Lone Operative ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Warpforged Cabal</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a6e1-fc83-d8b7-e29c" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Biomechanical Mutation" hidden="false" id="fa38-24c5-8e7a-d39c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a4f7-5b12-9dc3-e723" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Biomechanical Mutation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c4a-23e1-b682-c5f9">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. In your Command phase, you can select one friendly **^^Thousand Sons Vehicle^^** model within 6&quot; of this model. That model regains up to D3 lost wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Warpforged Cabal</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8aea-fa23-1e87-9c42" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp-Cursed Runemaster" hidden="false" id="c52f-a81b-d4e6-7a9c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a4f7-5b12-9dc3-e723" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warp-Cursed Runemaster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3927-d8fa-1a49-e98c">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. While the bearer is within 6&quot; of one or more friendly **^^Thousand Sons Vehicle^^** units, each time the bearer manifests a Ritual, while resolving that Ritual, add 6&quot; to its range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Warpforged Cabal</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="37a6-b2c5-f89d-d241" includeChildSelections="true"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
           </costs>
@@ -6295,27 +6691,6 @@ Wound roll.</characteristic>
   <sharedRules>
     <rule id="a70c-2007-30f7-a357" name="Cabal of Sorcerers" hidden="false">
       <description>If your Army Faction is THOUSAND SONS, at the end of your Command phase, each model from your army with this ability that is on the battlefield (excluding Battle-shocked models) generates you a number of Cabal points equal to the number shown in its ability (e.g. a model with the Cabal of Sorcerers 2 ability would generate you 2 Cabal points). The combined total of these is your Cabal points pool. During the battle round, you can use Rituals from the list below, deducting the Cabal points cost of each one from your Cabal points pool. If you do not have enough Cabal points for a Ritual, you cannot use it. Each Ritual can only be used once per phase. At the start of your next Command phase, your Cabal points pool resets to zero. Each time you use a Ritual, select one THOUSAND SONS PSYKER model from your army (excluding models that have already been selected for this rule this turn), then apply that Ritual’s effect using that PSYKER.</description>
-    </rule>
-    <rule id="4258-60ff-8457-a123" name="Kindred Sorcery" hidden="false">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="16cb-7eb7-e9fc-f7ea" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="16cb-7eb7-e9fc-f7ea" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>In your Command phase, you can select one of the abilities listed below to take effect until the start of your next Command phase.
-MALEVOLENT CHARGE
-Psychic weapons equipped by THOUSAND SONS models from your army have the [LETHAL HITS] ability.
-PSYCHIC MAELSTROM
-Psychic weapons equipped by THOUSAND SONS models from your army have the [SUSTAINED HITS 1] ability.
-WRATH OF THE IMMATERIUM
-Psychic weapons equipped by THOUSAND SONS models from your army have the [DEVASTATING WOUNDS] ability.</description>
     </rule>
     <rule name="Flow of Magic" id="9fa6-3c29-04b1-b428" hidden="false">
       <description>Certain areas of the battlefield are within your army’s Flow of Magic, as follows: 
