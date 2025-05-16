@@ -4376,18 +4376,27 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <condition type="greaterThan" value="10" field="selections" scope="f5b9-50c8-5c60-d8ea" childId="model" shared="true" id="ece4-2cf1-277-83d0" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="6" field="2b10-13dc-60b-4933">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="f92f-4de2-55f2-daa4" primary="false" name="Faction: Thousand Sons"/>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="dccb-c3a-9aea-7aa4" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="9044-5533-9ab0-9e99" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="dccb-c3a-9aea-7aa4" primary="true" name="Infantry"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="51d5-e14-29f9-8fcc" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="2c8a-cbe0-ddfb-a8a3" primary="false" name="Tzeentch"/>
         <categoryLink targetId="5438-1567-83a-d29c" id="fb1d-bc3-ac73-5e9d" primary="false" name="Tzaangors"/>
         <categoryLink targetId="f5bc-077e-5247-5609" id="6e7c-1ef1-0d7c-25a6" primary="false" name="Mutant"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="2b10-13dc-60b-4933" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2b10-13dc-60b-4933" includeChildSelections="true"/>
       </constraints>
       <profiles>
         <profile name="Tzaangors" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5d2f-669e-20ab-9841">
