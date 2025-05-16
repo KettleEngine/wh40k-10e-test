@@ -331,6 +331,7 @@ No **^^Scintillating Legions**^^ models from your army can be your **^^Warlord**
     <entryLink import="true" name="Screamers" hidden="false" id="8124-b1c4-202d-a7cb" targetId="0ff2-5a0e-6a84-401e" type="selectionEntry"/>
     <entryLink import="true" name="Sekhetar Robots" hidden="false" id="dbf2-0ce7-9558-47f7" targetId="8105-2e1f-4f48-2d14" type="selectionEntry"/>
     <entryLink import="true" name="Tzaangor Enlightened w/ Fatecaster Greatbows" hidden="false" id="68a2-1111-d3ec-3b17" targetId="96a0-d086-bd9d-14ca" type="selectionEntry"/>
+    <entryLink import="true" name="Sorcerer" hidden="false" id="4546-0388-cdf8-246c" targetId="5714-9842-cb4c-fcd9" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3b0d-dccf-8661-be1c" name="Detachment Choice" hidden="false" collective="false" import="true" type="upgrade">
