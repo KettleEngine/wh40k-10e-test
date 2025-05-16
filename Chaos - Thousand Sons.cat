@@ -7114,6 +7114,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="1dbf-3fd5-ef8c-e156" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="010f-ca66-75a1-379b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <profiles>
             <profile name="Incandaeum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="560a-e6f3-7d09-a9f0">
@@ -7198,6 +7203,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="c251-bd54-441-4799" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <profiles>
             <profile name="Warpmeld Dagger" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c56-4e2f-a7b2-3fc1">
@@ -7224,6 +7234,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="c251-bd54-441-4799" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7254,6 +7269,16 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="1693-5e00-da69-57bb" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="3789-4546-1d0a-f02b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <profiles>
             <profile name="Bray Lord" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="73a5-c6c8-7ab3-a1fd">
@@ -7280,6 +7305,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="b29f-c9bd-9dd6-8ac6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="c251-bd54-441-4799" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7338,6 +7368,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="c93d-f5b2-41a7-d822" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <profiles>
             <profile name="Diabolic Savant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d9a-c432-4b78-ea61">
@@ -7387,6 +7422,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="c93d-f5b2-41a7-d822" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7501,6 +7541,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="fb77-a9c1-0ed6-3a84" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <profiles>
             <profile name="Stave Abominus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a85-25f9-5e07-be10">
@@ -7550,6 +7595,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="a4f7-5b12-9dc3-e723" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
