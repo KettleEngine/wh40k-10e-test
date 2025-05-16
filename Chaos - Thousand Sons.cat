@@ -81,6 +81,7 @@ No **^^Scintillating Legions**^^ models from your army can be your **^^Warlord**
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Mutant" id="f5bc-077e-5247-5609" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="87f0-0a14-9b6b-f367" name="Rituals reference" hidden="false" collective="false" import="true" type="upgrade">
@@ -1213,6 +1214,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink id="6486-d3a8-c97d-1559" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="1a68-9e42-bce3-4eda" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="e45e-6ab2-7ce2-b631" name="Spawn" hidden="false" targetId="6342-2cd6-f518-f565" primary="false"/>
+        <categoryLink targetId="f5bc-077e-5247-5609" id="5bec-cb9f-b64b-8106" primary="false" name="Mutant"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7502-b778-b920-3f68" name="Chaos Spawn" hidden="false" collective="false" import="true" type="model">
@@ -2995,6 +2997,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink id="c432-17c5-dbf1-0fef" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="c935-ce01-827c-ce37" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="8840-e04d-21f7-22c5" name="Mutalith Vortex Beast" hidden="false" targetId="d9c7-99b5-1d37-3021" primary="false"/>
+        <categoryLink targetId="f5bc-077e-5247-5609" id="ef3a-32f0-3736-1f20" primary="false" name="Mutant"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9c5d-bc02-6aa5-5ea5" name="Betentacled maw" hidden="false" collective="false" import="true" type="upgrade">
@@ -3932,25 +3935,6 @@ Wound roll.</characteristic>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cultist firearm" hidden="false" id="e215-5f19-8d65-cd21" collective="true">
-      <profiles>
-        <profile name="Cultist firearm" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="202-7405-b14e-dd6a">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f54-1045-c891-f69"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7758-1a9d-2d4b-3aee"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Brutal assault weapon" hidden="false" id="dc4-4c83-52b8-7281" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="738-c78a-bedd-960d"/>
@@ -4284,6 +4268,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink targetId="4c00-2578-faf5-6918" id="91da-598-e9d8-8044" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="8f61-b1e9-6220-851d" primary="false" name="Tzeentch"/>
         <categoryLink targetId="527e-a024-3c7f-e5df" id="bfc-c62f-749e-2892" primary="false" name="Tzaangor Shaman"/>
+        <categoryLink targetId="f5bc-077e-5247-5609" id="7003-8cea-c537-6017" primary="false" name="Mutant"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Leader" hidden="false" type="rule" id="37cd-87e1-1d26-a426" targetId="b4dd-3e1f-41cb-218f"/>
@@ -4399,6 +4384,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink targetId="4c00-2578-faf5-6918" id="51d5-e14-29f9-8fcc" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="2c8a-cbe0-ddfb-a8a3" primary="false" name="Tzeentch"/>
         <categoryLink targetId="5438-1567-83a-d29c" id="fb1d-bc3-ac73-5e9d" primary="false" name="Tzaangors"/>
+        <categoryLink targetId="f5bc-077e-5247-5609" id="6e7c-1ef1-0d7c-25a6" primary="false" name="Mutant"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="2b10-13dc-60b-4933" includeChildSelections="true"/>
@@ -5827,6 +5813,10 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="48e7-f675-bd73-8a14" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Infiltrators" id="40b2-b6b1-f37c-971c" hidden="false" targetId="c05d-f4c3-f091-4938" type="rule"/>
+        <infoLink name="Stealth" id="eb5e-3627-4c29-6016" hidden="false" targetId="bec5-4288-34a6-ccfa" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tzaangor Enlightened" hidden="false" id="215c-b0bf-485c-45b1">
       <categoryLinks>
@@ -5836,6 +5826,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink targetId="4c00-2578-faf5-6918" id="0fc9-5150-436e-96e5" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="3de5-352e-bfe3-e766" primary="false" name="Tzeentch"/>
         <categoryLink targetId="7251-9ffe-99e5-bdc8" id="f6ee-77c2-4777-ae3d" primary="false" name="Tzaangor Enlightened"/>
+        <categoryLink targetId="f5bc-077e-5247-5609" id="3f06-f89c-c824-e718" primary="false" name="Mutant"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="94e9-de88-99fe-87c0" includeChildSelections="true"/>
@@ -5974,6 +5965,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink targetId="4c00-2578-faf5-6918" id="1ba5-7e54-f2dc-6395" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="0c2c-a14e-b583-c97b" primary="false" name="Tzeentch"/>
         <categoryLink targetId="7251-9ffe-99e5-bdc8" id="9327-d669-0569-3dd9" primary="false" name="Tzaangor Enlightened"/>
+        <categoryLink targetId="f5bc-077e-5247-5609" id="93bd-b787-6265-3bd6" primary="false" name="Mutant"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f270-54c4-1071-bcf9" includeChildSelections="true"/>
