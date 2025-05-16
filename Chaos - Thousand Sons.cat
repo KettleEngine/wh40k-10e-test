@@ -101,7 +101,6 @@
   <entryLinks>
     <entryLink id="5aa6-fabd-9ce9-01f9" name="Detachment Choice" hidden="false" collective="false" import="true" targetId="3b0d-dccf-8661-be1c" type="selectionEntry"/>
     <entryLink id="b1b7-3c3b-c789-e1f1" name="Ahriman" hidden="false" collective="false" import="true" targetId="05f1-7fda-a0da-ea40" type="selectionEntry"/>
-    <entryLink id="5847-34cb-f4d4-f5f0" name="Ahriman on Disc of Tzeentch" hidden="false" collective="false" import="true" targetId="3bfa-bf00-b5ed-cc81" type="selectionEntry"/>
     <entryLink id="0e64-a79a-af7c-5b5f" name="Thousand Sons Land Raider" hidden="false" collective="false" import="true" targetId="dfde-eaff-e63e-3aae" type="selectionEntry"/>
     <entryLink id="70e3-266d-822c-677c" name="Thousand Sons Predator Annihilator" hidden="false" collective="false" import="true" targetId="a619-beee-4bde-d049" type="selectionEntry"/>
     <entryLink id="482e-2586-c4e4-37f7" name="Thousand Sons Predator Destructor" hidden="false" collective="false" import="true" targetId="4819-dbbe-8547-4e23" type="selectionEntry"/>
@@ -120,7 +119,6 @@
     <entryLink id="0d44-a7e3-517e-cc85" name="Mutalith Vortex Beast" hidden="false" collective="false" import="true" targetId="094c-c618-92c1-b394" type="selectionEntry"/>
     <entryLink import="true" name="Rubric Marines" hidden="false" type="selectionEntry" id="4b-186d-15aa-8749" targetId="5d3d-e13b-8b76-dad3"/>
     <entryLink import="true" name="Scarab Occult Terminators" hidden="false" type="selectionEntry" id="ad0-9341-6146-3751" targetId="b1cf-c5-5121-92a4"/>
-    <entryLink import="true" name="Thousand Sons Sorcerer" hidden="false" type="selectionEntry" id="597b-83ac-60d8-5889" targetId="af1e-9a3d-785c-47f8"/>
     <entryLink import="true" name="Thousand Sons Sorcerer in Terminator Armour" hidden="false" type="selectionEntry" id="f7d0-f6ee-1fd5-b4da" targetId="c6d1-e73b-9d26-5d8b"/>
     <entryLink import="true" name="Thousand Sons Cultists" hidden="false" type="selectionEntry" id="ee2d-bdb6-78bb-62cd" targetId="9cd8-1a0-914b-c212"/>
     <entryLink import="true" name="Thousand Sons Daemon Prince" hidden="false" type="selectionEntry" id="8b7c-94a7-c872-438d" targetId="eccd-e442-607b-3fd0"/>
@@ -416,35 +414,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="05f1-7fda-a0da-ea40" name="Ahriman" publicationId="015a-6212-d737-9044" page="7-8" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="9403-dbf7-4d98-f7c6" value="0">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3bfa-bf00-b5ed-cc81" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9403-dbf7-4d98-f7c6" type="max"/>
       </constraints>
       <profiles>
         <profile id="6d90-3db1-e467-158d" name="Ahriman" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="59fc-90f2-82f7-c85e" name="Rubric Lord" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="106d-2ec8-c28a-04e4" name="Scryer of Fates (Psychic]" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="106d-2ec8-c28a-04e4" name="Arch-Sorcerer of Tzeentch (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can select this model to use a Ritual for 0 Cabal points (see Cabal of Sorcerers). If you do, all the other rules for using Rituals still apply.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If your army includes this model, after both players have deployed their armies, you can select up to three THOUSAND SONS units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
           </characteristics>
         </profile>
         <profile id="dea9-e361-a24a-1b5d" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -455,7 +441,12 @@
         <profile id="2afc-e7c8-04d3-e115" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
-- RUBRIC MARINES</characteristic>
+- RUBRIC MARINES, TZAANGOR ENLIGHTENED</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="daec-bba4-3c4d-5044" name="Arch-Sorcerer of Tzeentch (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model attempts a Ritual, add 1 to the Psychic test result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -503,27 +494,27 @@
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="df79-4fe6-4f55-b65b" name="Psychic Stalk" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="df79-4fe6-4f55-b65b" name="Transmogrifying Blast" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d13-c7ce-145b-2923" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437c-fc84-848f-9f86" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f7d3-259c-714e-e397" name="Psychic Stalk" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+            <profile id="f7d3-259c-714e-e397" name="Transmogrifying Blast" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Precision, Psychic</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Psychic</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="3cea-c171-0a75-a119" name="Precision" hidden="false" targetId="9143-31ae-e0a6-6007" type="rule"/>
-            <infoLink id="4e69-f663-6f9d-c6b0" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
+            <infoLink id="4e69-f663-6f9d-c6b0" name="Blast" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+            <infoLink id="2b1a-ba89-1bc3-6c25" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -559,165 +550,12 @@
         <entryLink id="1a04-3d6d-9c8f-08e8" name="Warlord" hidden="false" collective="false" import="true" targetId="a021-c1a0-c35c-f10f" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="3"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3bfa-bf00-b5ed-cc81" name="Ahriman on Disc of Tzeentch" publicationId="015a-6212-d737-9044" page="9-10" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="3031-51e7-8857-f0d3" value="0">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05f1-7fda-a0da-ea40" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3031-51e7-8857-f0d3" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="7d58-695c-0937-b4a0" name="Ahriman" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8f1d-56cb-a37f-2a5e" name="Rubric Lord" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e117-9164-7606-ef92" name="Arch-Sorcerer of Tzeentch (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can select this model to use a Ritual for 0 Cabal points (see Cabal of Sorcerers). If you do, all the other rules for using Rituals still apply.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2c8e-c194-2a9b-e9ba" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e029-9e54-4a48-28ce" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
-- RUBRIC MARINES</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="10a3-0a5d-6d3a-a57e" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
-        <infoLink id="b657-de3b-6ceb-ad40" name="Cabal of Sorcerers" hidden="false" targetId="a70c-2007-30f7-a357" type="rule">
-          <modifiers>
-            <modifier type="append" field="name" value="3"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="ba7f-0c8d-efeb-5462" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
-        <categoryLink id="ec26-67f7-d367-5bc9" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-        <categoryLink id="8c20-264c-6c7d-cc18" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
-        <categoryLink id="52b5-17e8-994e-28f0" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="true"/>
-        <categoryLink id="06fd-70d2-764e-2f79" name="Psyker" hidden="false" targetId="13bf-2bee-3ae0-b414" primary="false"/>
-        <categoryLink id="8ff5-671a-57b8-5b5a" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
-        <categoryLink id="48a8-45e0-02ef-b31f" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
-        <categoryLink id="8bbb-9f20-d2bb-bd75" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
-        <categoryLink id="7a20-5fba-2e62-2eb3" name="Ahriman on Disc of Tzeentch" hidden="false" targetId="913a-baae-b89b-995d" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="610a-72a8-1b22-eefc" name="Inferno bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ccb-ee74-61a0-a6d2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b2-fe77-7077-c683" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9330-e880-57d2-a1bf" name="Inferno bolt pistol" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="1b7f-6cd1-a94c-b8d6" name="Pistol" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="570a-6d55-51ee-9fc7" name="Psychic Stalk" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7693-e7bb-97db-c26b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e103-fcd9-5f81-9f8b" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6eeb-c063-998a-fcce" name="Psychic Stalk" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Precision, Psychic</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="b550-7c66-0d4b-235e" name="Precision" hidden="false" targetId="9143-31ae-e0a6-6007" type="rule"/>
-            <infoLink id="2e0e-9d6e-2bb8-546e" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="93c8-9c05-8892-b481" name="Black Staff of Ahriman" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e88f-7f9e-5ba5-ff96" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b03-6b42-9ded-76dd" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0c82-7e88-173e-dd05" name="Black Staff of Ahriman" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-              <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="65b9-0303-e47c-b040" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="cbf9-c09a-8ce8-83cc" name="Warlord" hidden="false" collective="false" import="true" targetId="a021-c1a0-c35c-f10f" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="3"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dfde-eaff-e63e-3aae" name="Thousand Sons Land Raider" hidden="false" collective="false" import="true" type="model" publicationId="015a-6212-d737-9044" page="11-12">
@@ -860,13 +698,13 @@
     </selectionEntry>
     <selectionEntry id="9147-8824-3c93-86ed" name="Inferno combi-bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="9e59-f480-0eef-ad56" name="Inferno combi-bolter" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+        <profile id="9e59-f480-0eef-ad56" name="Malefic Curse" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
           </characteristics>
@@ -887,7 +725,7 @@
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1</characteristic>
           </characteristics>
@@ -1790,8 +1628,6 @@
           </constraints>
           <entryLinks>
             <entryLink id="30b2-be5e-cb23-1297" name="Inferno bolt pistol" hidden="false" collective="false" import="true" targetId="c70d-46dc-32da-b1a4" type="selectionEntry"/>
-            <entryLink id="7803-78c2-6b48-96f9" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="de2a-3e61-5f44-165d" type="selectionEntry"/>
-            <entryLink id="16e8-90f2-a1d0-9393" name="Warpflame pistol" hidden="false" collective="false" import="true" targetId="482c-1f7a-b65b-1284" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1801,12 +1637,12 @@
         <entryLink id="c184-aa8c-0332-da76" name="Enhancements" hidden="false" collective="false" import="true" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="2"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
@@ -1893,17 +1729,17 @@
       <profiles>
         <profile id="dc89-e419-8faa-25c6" name="Exalted Sorcerer on Disc of Tzeentch" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="b7bd-2ab0-8ca3-2791" name="Arcane Shield (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="b7bd-2ab0-8ca3-2791" name="Illusions of Tzeentch (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have a 4+ invulnerable save.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</characteristic>
           </characteristics>
         </profile>
         <profile id="88e4-458d-43c0-706e" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -1913,13 +1749,13 @@
         </profile>
         <profile id="f261-3205-ade9-f73f" name="Binding Tendrils (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit (excluding MONSTERS and VEHICLES) hit by one or more of those attacks made with its Arcane Fire; until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from its Move characteristic and subtract 2 from Charge rolls made for it.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy INFANTRY unit hit by one or more of those attacks made with its Arcane Fire; until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from its Move characteristic and subtract 2 from Charge rolls made for it.</characteristic>
           </characteristics>
         </profile>
         <profile id="7343-a940-ca1d-83f4" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
-- RUBRIC MARINES</characteristic>
+- RUBRIC MARINES, TZAANGOR ENLIGHTENED</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1978,7 +1814,7 @@
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
@@ -1999,8 +1835,6 @@
           </constraints>
           <entryLinks>
             <entryLink id="02ac-b473-eceb-cec6" name="Inferno bolt pistol" hidden="false" collective="false" import="true" targetId="c70d-46dc-32da-b1a4" type="selectionEntry"/>
-            <entryLink id="b5d2-1849-d645-cc2f" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="de2a-3e61-5f44-165d" type="selectionEntry"/>
-            <entryLink id="f198-5055-bd5b-fb87" name="Warpflame pistol" hidden="false" collective="false" import="true" targetId="482c-1f7a-b65b-1284" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2010,12 +1844,12 @@
         <entryLink id="58c8-75d4-a684-c507" name="Enhancements" hidden="false" collective="false" import="true" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="2"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
@@ -2663,12 +2497,12 @@
         </profile>
         <profile id="1ddc-603c-d82f-9ff1" name="Malefic Maelstrom (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability</characteristic>
           </characteristics>
         </profile>
         <profile id="dd43-4cf0-2cac-a361" name="Glimpse of Eternity (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, you can change the result of one Hit roll, one Wound roll, one Damage roll or one saving throw made for this model to an unmodified 6.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, you can change the result of one Hit roll, one Wound roll or one saving throw made for this model to an unmodified 6.</characteristic>
           </characteristics>
         </profile>
         <profile id="ae0d-0e92-6f67-700b" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -2722,16 +2556,16 @@
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="80c8-2d1f-34ff-ef15" name="Screamer Invocation" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="80c8-2d1f-34ff-ef15" name="Fires of the Abyss" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84d7-e885-bbae-e3af" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a8-c70a-9500-fed0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8aac-375c-8981-3bc5" name="➤ Screamer Invocation - witchfire" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+            <profile id="8aac-375c-8981-3bc5" name="➤ Fires of the Abyss - witchfire" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D3</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -2739,7 +2573,7 @@
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Torrent</characteristic>
               </characteristics>
             </profile>
-            <profile id="26e3-1e10-8c8a-2d51" name="➤ Screamer Invocation - focused witchfire" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+            <profile id="26e3-1e10-8c8a-2d51" name="➤ Fires of the Abyss - focused witchfire" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
@@ -2772,12 +2606,12 @@
         <entryLink id="d4f9-d775-ee24-ba0d" name="Enhancements" hidden="false" collective="false" import="true" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="2"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74f5-4553-6d71-b44c" name="Force weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2829,27 +2663,27 @@
         </profile>
         <profile id="5a62-494d-e767-a4ea" name="Unearthly Power" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, select one of the abilities in the Crimson King section. Until the start of the next battle round, this model has that ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, select one of the abilities in the Crimson King section (see left). Until the start of the next battle round, this model has that ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="fa66-e8ff-f857-f176" name="Lord of the Planet of the Sorcerers (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS PSYKER unit is within 6&quot; of this model, each time a model in that unit makes a Psychic Attack, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can attempt up to two Rituals per turn instead of one, and each time this model attempts a Ritual, add 2 to the Psychic test result</characteristic>
           </characteristics>
         </profile>
         <profile id="ea6d-bbfb-6322-fda9" name="Impossible Form (Psychic)" hidden="false" typeId="b74a-bcb9-3e72-83e4" typeName="Crimson King">
           <characteristics>
-            <characteristic name="Effect" typeId="d650-cfd1-3e18-1a8d">Each time an attack is made against this PSYKER (excluding Psychic Attacks), subtract 1 from that attack’s Damage characteristic.</characteristic>
+            <characteristic name="Effect" typeId="d650-cfd1-3e18-1a8d">Each time an attack is made against this PSYKER (excluding Psychic Attacks), subtract 1 from the Damage characteristic of that attack.</characteristic>
           </characteristics>
         </profile>
         <profile id="5759-9e8a-190f-0083" name="Treason of Tzeentch (Psychic)" hidden="false" typeId="b74a-bcb9-3e72-83e4" typeName="Crimson King">
           <characteristics>
-            <characteristic name="Effect" typeId="d650-cfd1-3e18-1a8d">At the start of your opponent’s Shooting phase, you can select one enemy unit within 24&quot; of and visible to this PSYKER. Until the end of the phase, ranged weapons equipped by models in that unit have the [HAZARDOUS] ability.</characteristic>
+            <characteristic name="Effect" typeId="d650-cfd1-3e18-1a8d">At the start of your opponent&apos;s Shooting phase, select one enemy unit within 24&quot; of this PSYKER. Until the end of the phase, ranged weapons equipped by models in that unit have the [HAZARDOUS] ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="7d22-2630-4676-ce12" name="Time Flux (Aura, Psychic)" hidden="false" typeId="b74a-bcb9-3e72-83e4" typeName="Crimson King">
           <characteristics>
-            <characteristic name="Effect" typeId="d650-cfd1-3e18-1a8d">While a friendly THOUSAND SONS unit is within 6&quot; of this PSYKER, add 2&quot; to the Move characteristic of models in that unit.</characteristic>
+            <characteristic name="Effect" typeId="d650-cfd1-3e18-1a8d">While a friendly THOUSAND SONS unit is within 6&quot; of this PSYKER, add 2&quot; to the Move characteristic of models in that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2891,7 +2725,7 @@
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">3D3</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">11</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Psychic</characteristic>
@@ -2927,7 +2761,7 @@
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
               </characteristics>
             </profile>
@@ -2948,10 +2782,10 @@
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Psychic</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Ignores Cover, Psychic</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2969,12 +2803,12 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="465"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="420"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="4"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
@@ -3622,7 +3456,7 @@
         <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="360" field="51b2-306e-1021-d207">
+        <modifier type="set" value="375" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="5" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -3635,7 +3469,7 @@
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
@@ -3648,6 +3482,16 @@ Wound roll.</characteristic>
         <profile id="1002-36f7-60ba-f4c9" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scarab Occult Sorcerer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5d9a-5bc2-cd23-8b8e">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3690,31 +3534,6 @@ Wound roll.</characteristic>
                 <infoLink id="2572-21e7-ecb3-5242" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warpsmite" hidden="false" id="f6b2-238a-4613-a59f">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b74d-d230-6cd7-2d37"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6ac-c209-e814-a3e6"/>
-              </constraints>
-              <profiles>
-                <profile name="Warpsmite" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="63f6-b7a3-6d83-2718">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 4+, Devastating Wounds, Pistol, Psychic</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Anti-" hidden="false" type="rule" id="faeb-fdd7-6b98-6096" targetId="4111-82e3-9444-e942"/>
-                <infoLink name="Devastating Wounds" hidden="false" type="rule" id="f382-311b-9dff-b272" targetId="be1e-ac8e-1e2c-3528"/>
-                <infoLink name="Pistol" hidden="false" type="rule" id="cc6f-f184-36a7-6200" targetId="8bf7-8812-923d-29e4"/>
-                <infoLink name="Psychic" hidden="false" type="rule" id="7849-5bdc-583f-7c30" targetId="e9c4-2bb8-12ee-cd1b"/>
-              </infoLinks>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" hidden="false" id="1c22-842f-79af-4288" defaultSelectionEntryId="cdf3-4e74-480-7dc3">
@@ -3724,7 +3543,7 @@ Wound roll.</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7cb-2e4-91f2-97b5"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Inferno combi-bolter" hidden="false" type="selectionEntry" id="cdf3-4e74-480-7dc3" targetId="9147-8824-3c93-86ed"/>
+                <entryLink import="true" name="Inferno combi-bolter" hidden="false" type="selectionEntry" id="e1f0-f2e4-ee35-e04c" targetId="9147-8824-3c93-86ed"/>
               </entryLinks>
               <selectionEntries>
                 <selectionEntry id="8dc1-62ff-9bc7-59d7" name="Prosperine khopesh" hidden="false" collective="false" import="true" type="upgrade">
@@ -3745,6 +3564,24 @@ Wound roll.</characteristic>
                     </profile>
                   </profiles>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Malefic Curse" hidden="false" id="6ed8-3a4f-acfb-42ba">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d45b-0163-83bc-3e06"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Malefic Curse" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2a3d-19dc-8489-6275">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti Infantry 4+, Devastating Wounds, Psychic</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3753,7 +3590,11 @@ Wound roll.</characteristic>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="1"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hellfyre missile rack" hidden="false" id="9cea-2e7-8711-11bf">
@@ -3936,7 +3777,7 @@ Wound roll.</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
                       </characteristics>
@@ -3982,139 +3823,14 @@ Wound roll.</characteristic>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Thousand Sons Sorcerer" hidden="false" id="af1e-9a3d-785c-47f8" publicationId="015a-6212-d737-9044" page="47-48">
-      <categoryLinks>
-        <categoryLink targetId="7002-1fbb-7571-e8e7" id="fe6a-6cdf-d8fc-aada" primary="false" name="Faction: Thousand Sons"/>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="2d8c-f7e2-c7b9-29f3" primary="false" name="Infantry"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="d62-62aa-3a66-f164" primary="true" name="Character"/>
-        <categoryLink targetId="13bf-2bee-3ae0-b414" id="4294-1e8b-eab2-42cf" primary="false" name="Psyker"/>
-        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="ca8c-55c3-5511-8d09" primary="false" name="Grenades"/>
-        <categoryLink targetId="4c00-2578-faf5-6918" id="2ad4-bc4-c062-8bbb" primary="false" name="Chaos"/>
-        <categoryLink targetId="b188-114f-6ba5-79a1" id="3434-dc98-eb9-61db" primary="false" name="Tzeentch"/>
-        <categoryLink targetId="3789-4546-1d0a-f02b" id="72b8-dd80-5d02-fd1" primary="false" name="Sorcerer"/>
-      </categoryLinks>
-      <profiles>
-        <profile id="2918-39b5-989-940e" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="895-5ec2-f30a-9905" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
-- RUBRIC MARINES</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Illusions of Tzeentch (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f72-d7a7-dce1-8da4">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Thousand Sons Sorcerer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="11a0-4128-c564-2a81">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Cabal of Sorcerers" hidden="false" type="rule" id="914b-c3ff-9421-72e3" targetId="a70c-2007-30f7-a357">
-          <modifiers>
-            <modifier type="append" value="1" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Leader" hidden="false" type="rule" id="2d54-32f-7fae-ca4b" targetId="b4dd-3e1f-41cb-218f"/>
-        <infoLink name="Empyric Guidance (Psychic)" hidden="false" type="profile" id="bb31-6d83-f20f-a06" targetId="660e-ccb9-65e7-19f"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="275c-eee9-4ed3-bb0e" name="Enhancements" hidden="false" collective="false" import="true" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
-        <entryLink id="d7b9-e7da-6d73-2fcd" name="Warlord" hidden="false" collective="false" import="true" targetId="a021-c1a0-c35c-f10f" type="selectionEntry"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry id="9c64-e798-1a22-cba9" name="Force weapon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a57-2917-6912-4a9d" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd8-d222-547b-d70a" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="8d06-7108-6c65-a57" name="Force weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-              <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="89a2-368d-e9bb-9df3" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Fires of the Abyss" hidden="false" id="d022-6024-e491-6dab">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf2e-3ee1-a893-1578"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9b7-3bb2-e24a-7f21"/>
-          </constraints>
-          <profiles>
-            <profile name="Fires of the Abyss" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9ae3-ae40-4005-d7ab">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Psychic, Sustained Hits 3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Pistol" hidden="false" type="rule" id="c78c-5e4e-e73c-4e58" targetId="8bf7-8812-923d-29e4"/>
-            <infoLink name="Psychic" hidden="false" type="rule" id="f1c9-d1b3-7d0d-6136" targetId="e9c4-2bb8-12ee-cd1b"/>
-            <infoLink name="Sustained Hits" hidden="false" type="rule" id="4f86-14e8-62db-c7c4" targetId="1897-c22c-9597-12b1"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5afb-f539-d6f6-34b" name="Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="cc11-59d3-1b6f-e31">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad11-d5fb-e504-cdcf" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="447b-f072-7d78-32e5" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="cc11-59d3-1b6f-e31" name="Inferno bolt pistol" hidden="false" collective="false" import="true" targetId="c70d-46dc-32da-b1a4" type="selectionEntry"/>
-            <entryLink id="74e1-84e6-2b4f-76c1" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="de2a-3e61-5f44-165d" type="selectionEntry"/>
-            <entryLink id="1592-836f-48a4-77" name="Warpflame pistol" hidden="false" collective="false" import="true" targetId="482c-1f7a-b65b-1284" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="1"/>
-      </costs>
-      <constraints>
-        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Thousand Sons Sorcerer in Terminator Armour" hidden="false" id="c6d1-e73b-9d26-5d8b" publicationId="015a-6212-d737-9044" page="49-50">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="2"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="c7d3-a084-f157-5dc4" primary="false" name="Faction: Thousand Sons"/>
@@ -4154,7 +3870,7 @@ Wound roll.</characteristic>
         </profile>
         <profile name="Marked by Fate (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c56-bbd9-5aa5-21f0">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, you can select one enemy unit within 18&quot; of and visible to this model. Until the end of the turn, each time a friendly THOUSAND SONS model makes an attack that targets that unit, re-roll a Hit roll of 1.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model&apos;s unit has shot, select one enemy unit hit by one or more of those attacks made with a Psychic weapon. Until the end of the phase, each time a friendly THOUSAND SONS unit makes an attack that targets that enemy unit, add 1 to the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Thousand Sons Sorcerer in Terminator Armour" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="123c-e2d5-50ff-e0d4">
@@ -4191,13 +3907,13 @@ Wound roll.</characteristic>
             <infoLink id="bbf4-6c37-ad9e-2b87" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Coruscating Flames" hidden="false" id="c95f-7907-e078-7e21">
+        <selectionEntry type="upgrade" import="true" name="Gaze of Hate" hidden="false" id="c95f-7907-e078-7e21">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e595-85ee-f54f-72c4"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d394-982b-38be-6ed"/>
           </constraints>
           <profiles>
-            <profile name="Coruscating Flames" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e0f8-392d-1f3e-fd0c">
+            <profile name="Gaze of Hate" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e0f8-392d-1f3e-fd0c">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
@@ -4226,23 +3942,6 @@ Wound roll.</characteristic>
             <entryLink import="true" name="Inferno combi-bolter" hidden="false" type="selectionEntry" id="a666-c777-6011-2e07" targetId="9147-8824-3c93-86ed"/>
             <entryLink import="true" name="Inferno combi-weapon" hidden="false" type="selectionEntry" id="d865-2701-330e-86f5" targetId="52e6-005f-6c73-2fd5"/>
           </entryLinks>
-          <selectionEntries>
-            <selectionEntry id="dac1-d90a-65a-8e1f" name="Prosperine khopesh" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d361-d27c-a26b-2e94" name="Prosperine khopesh" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -4520,14 +4219,19 @@ Wound roll.</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="The Weave of Fate (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7ea-e27e-52cc-8dd2">
+        <profile name="Servile Pawns" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7ea-e27e-52cc-8dd2">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one friendly RUBRIC MARINES or SCARAB OCCULT TERMINATORS unit within 6&quot; of this model. Until the end of the phase, weapons equipped by models in that unit have the [PRECISION] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly THOUSAND SONS INFANTRY units, this model has the Lone Operative ability.</characteristic>
           </characteristics>
         </profile>
         <profile name="Glamour of Tzeentch (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aa29-af55-b319-e4d6">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS unit is within 6&quot; of this model, models in that unit have the Stealth ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spirit Snare" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f8df-dd77-f339-c3fe">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a friendly THOUSAND SONS PSYKER model with the Cabal of Sorcerers ability is destroyed while within 9&quot; of one or more models with this ability, select one of those models with this ability: until the end of the battle, each time the selected model attempts a Ritual, add 1 to Psychic test result [to a maximum of +2].</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4540,6 +4244,21 @@ Wound roll.</characteristic>
         <infoLink name="Cabal of Sorcerers" hidden="false" type="rule" id="cad4-adc4-6d05-cc4" targetId="a70c-2007-30f7-a357">
           <modifiers>
             <modifier type="append" value="2" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f252-d3ab-4c90-3ee3" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D3"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="93a6-78da-41fb-96c7" name="Sustained Hits" hidden="false" targetId="1897-c22c-9597-12b1" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D3"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="37f3-a0e1-62de-f709" name="Ignores Cover" hidden="false" targetId="4640-43e7-30b-215a" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D3"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -4563,10 +4282,10 @@ Wound roll.</characteristic>
             <profile id="efcf-58bc-bc84-d624" name="Infernal cannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
               </characteristics>
@@ -4587,18 +4306,18 @@ Wound roll.</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds, Psychic</characteristic>
               </characteristics>
             </profile>
             <profile id="efb6-a703-1668-e30b" name="➤ Hellforged weapons - sweep" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">14</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds, Psychic</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4606,14 +4325,37 @@ Wound roll.</characteristic>
             <infoLink name="Psychic" hidden="false" type="rule" id="f014-82df-56fe-bc6c" targetId="e9c4-2bb8-12ee-cd1b"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry id="1897-ef92-caf3-76e6" name="Dark Blessing" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10cd-9108-8ab7-d84f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11cc-f498-9279-b1a4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c7d3-7c48-e30a-06d3" name="Dark Blessing" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">9</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">IGNORES COVER, PSYCHIC, SUSTAINED HITS 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="ab8b-e1e4-d9a8-621c" name="Warlord" hidden="false" collective="false" import="true" targetId="a021-c1a0-c35c-f10f" type="selectionEntry"/>
         <entryLink id="ad33-2eb7-442a-621c" name="Enhancements" hidden="false" collective="false" import="true" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
-        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="2"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="66f4-929e-1769-f277" name="Thousand Sons Daemon Prince with wings" hidden="false" collective="false" import="true" type="model" page="55-56" publicationId="015a-6212-d737-9044">
@@ -4638,12 +4380,14 @@ Wound roll.</characteristic>
         </profile>
         <profile name="Aetherstride (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d2ea-4457-7ac2-7173">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent’s turn, if this model is not within Engagement Range of any enemy units, you can remove it from the battlefield and then, in the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models. If the battle ends and this model is not on the battlefield, it is destroyed.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model is set up on the battlefield using the Deep Strike ability, it can perform an aetherstride.
+If it does: It can be set up anywhere on the battlefield that is more than 3&quot; horizontally away from all enemy units.
+Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] ability. Until the end of the turn, it is not eligible to declare a charge.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Sorcerous Fire (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fee5-696a-3638-597a">
+        <profile name="Hunter of Souls (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fee5-696a-3638-597a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model ends a Normal move, you can select one enemy unit it moved over this phase and roll nine D6: for each 6, that unit suffers 1 mortal wound.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a CHARACTER unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1 (if that attack targets a PSYKER CHARACTER unit, you can re-roll the Hit roll and you can re-roll the Wound roll instead) Each time this model destroys a CHARACTER unit, this model regains up to D3 lost wounds (if that CHARACTER unit was a PSYKER untit, this model regains up to 3 lost wounds instead).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4680,10 +4424,10 @@ Wound roll.</characteristic>
             <profile id="f3ac-4af-df82-2142" name="Infernal cannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
               </characteristics>
@@ -4704,18 +4448,18 @@ Wound roll.</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds, Psychic</characteristic>
               </characteristics>
             </profile>
             <profile id="3160-17ed-2610-b2dc" name="➤ Hellforged weapons - sweep" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">14</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds, Psychic</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4723,13 +4467,36 @@ Wound roll.</characteristic>
             <infoLink name="Psychic" hidden="false" type="rule" id="fed8-6afc-be2a-e2ea" targetId="e9c4-2bb8-12ee-cd1b"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark Blessing" hidden="false" id="6a9d-dddb-6fb2-1436" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bddd-3ee1-84bd-bce7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ac7-c3bc-9e16-c717" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Dark Blessing" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="10e3-f033-bbaa-73a1">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">9</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">IGNORES COVER, PSYCHIC, SUSTAINED HITS 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="763b-4f2a-df81-e79b" name="Warlord" hidden="false" collective="false" import="true" targetId="a021-c1a0-c35c-f10f" type="selectionEntry"/>
         <entryLink id="b870-1d36-cda9-a3db" name="Enhancements" hidden="false" collective="false" import="true" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="2"/>
       </costs>
     </selectionEntry>
@@ -6107,6 +5874,381 @@ Wound roll.</characteristic>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1e72-ed41-b9bb-a9e3" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="5714-9842-cb4c-fcd9" name="Sorcerer" hidden="false" collective="false" import="true" type="model" publicationId="48fc-15aa-b307-9443" page="35-36">
+      <profiles>
+        <profile id="deeb-c58d-928c-f099" name="Infernal Master" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="37c9-e721-84bc-7abf" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5af0-a249-dbe8-cebe" name="Twisted Sorceries (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in your Shooting phase or the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of Psychic weapons equipped by this model by 3.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e969-2596-f75f-1883" name="Empyric Guidance (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7320-8fe9-0f33-ec4b" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+- RUBRIC MARINES</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fe73-499c-f997-2724" name="Cabal of Sorcerers" hidden="false" targetId="a70c-2007-30f7-a357" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="96d5-2666-6a36-e13b" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e8e5-1bc5-ad2b-ba11" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
+        <categoryLink id="fc5e-23d1-7f3c-e895" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink id="8121-660a-4c4d-4c41" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink id="97c4-d12d-56dc-d0db" name="Grenades" hidden="false" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink id="1d51-ea8c-ec25-a981" name="Psyker" hidden="false" targetId="13bf-2bee-3ae0-b414" primary="false"/>
+        <categoryLink id="8c6b-dd77-3884-ea6c" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink id="0cbf-917d-bcda-26e2" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
+        <categoryLink id="4ae5-0a2a-6e04-c049" name="Infernal Master" hidden="false" targetId="14c6-7790-6e57-92b9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="019e-c75c-4b8e-82ef" name="Force weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4da-4b9a-bdcf-dd8a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ddb-938e-60d3-91ca" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="0845-0d61-f314-f77f" name="Force weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c8bf-6c18-9c39-86cd" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6a81-a8bf-01bc-09e4" name="Pandaemonic Delusion" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96b4-a2de-e805-13d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6618-08dc-6c81-10cc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="94b6-493a-d2ab-0dff" name="Pandaemonic Delusion" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Sustained Hits 3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2b22-0634-7c9c-94dc" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
+            <infoLink id="7f45-4d0d-044b-de54" name="Sustained Hits" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="64d2-57b1-fded-b4e0" name="Prosperine khopesh" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cb2-4cae-a49f-8cb0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d2a-9719-91d3-ebfe" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="c400-e0b0-67db-7135" name="Prosperine khopesh" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="da97-8472-846e-3b39" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="882a-aef5-1f66-63fa" name="Inferno bolt pistol" hidden="false" collective="false" import="true" targetId="c70d-46dc-32da-b1a4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e296-8e23-5e45-6d51" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3369-583f-60d6-f1e9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5496-15c5-b50c-91ea" name="Warlord" hidden="false" collective="false" import="true" targetId="a021-c1a0-c35c-f10f" type="selectionEntry"/>
+        <entryLink id="d4f0-d563-8246-f4b9" name="Enhancements" hidden="false" collective="false" import="true" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sekhetar Robots" hidden="false" id="8105-2e1f-4f48-2d14" publicationId="015a-6212-d737-9044" page="43-44">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="5" field="selections" scope="8105-2e1f-4f48-2d14" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Prophetic Sentinels" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6907-78a3-d8ff-7c59">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, you can target this unit with the Fire Overwatch or Heroic Intervention Stratagem for OCP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3a53-f7df-dc86-5e46" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sekhetar Robots" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="942b-3fc7-8d1a-72c4">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="7002-1fbb-7571-e8e7" id="8951-c9ff-e3da-8159" primary="false" name="Faction: Thousand Sons"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="8c88-8004-2b89-a315" primary="false" name="Chaos"/>
+        <categoryLink targetId="b188-114f-6ba5-79a1" id="0d28-4422-8a62-7b5b" primary="false" name="Tzeentch"/>
+        <categoryLink targetId="cd-b0e0-7663-a659" id="4458-0aff-301e-88ac" primary="false" name="Rubric Marines"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="b7ab-c9a3-a709-f9d8" primary="false" name="Vehicle"/>
+        <categoryLink targetId="6dda-e157-334d-e93a" id="4a8e-a9a5-6b5b-d738" primary="false" name="Walker"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="2-4 Sekhetar Robots" hidden="false" id="86ec-da1c-cf6f-42de" defaultSelectionEntryId="1901-5e60-1564-2562">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="56b1-7b41-b3c4-ea84"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f8fc-5375-c73a-8fca"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Sekhetar Robots w/ Warpflame projector &amp; Power claw" hidden="false" id="8f2a-dead-3d99-0ddc">
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="38b9-5abf-ec0a-ef38"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy warpflamer" hidden="false" id="6340-569a-728e-d139" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd23-4e09-6d68-d8de"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d16-4695-7b5d-e298"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Heavy warpflamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="634f-091e-a742-92aa">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Power claw" hidden="false" id="0fba-4afc-5adc-1b6a" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50d2-34ac-aaa3-1c25"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcf7-85e4-c136-ceca"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Power claw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2dad-aef7-1468-8ee5">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Warpflame projector" hidden="false" id="0f38-47b3-0303-8ed6" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="690c-7524-67d7-422b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc6d-ca88-910e-ea26"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Warpflame projector" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2e7a-77ad-6526-d068">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hellfire missle rack" hidden="false" id="7da7-5947-39d0-bde5" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db57-bc63-0ea6-ab84"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e21-cb7c-e1a1-2136"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hellfire missle rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6cb8-bf3f-ddd1-410d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sekhetar Robots w/ Pyreflux meltagun" hidden="false" id="046c-2741-7817-8432">
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6bd9-d998-ced7-7688"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy warpflamer" hidden="false" id="48e9-7094-4dc7-d70b" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b2e-3f3b-51c9-6126"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2216-73c0-70d4-e301"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Heavy warpflamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a3cd-3870-fcc4-69ec">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="7ec4-cf2f-35ad-1a90" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebd8-ab24-c03c-35ef"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2528-093a-1b66-af0f"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ec9c-fcd9-e035-1ad2">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pyreflux meltagun" hidden="false" id="d414-9733-2c2f-8ff6" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="784d-4b80-5276-1afb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccb3-4004-cd45-59f2"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Pyreflux meltagun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="34ac-0529-2c57-b665">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hellfire missle rack" hidden="false" id="75ce-408e-f608-17be" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd67-6716-4e07-811e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="837f-af73-4c67-3fd5"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hellfire missle rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8a16-ace4-2000-b813">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="48e7-f675-bd73-8a14" type="max"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
