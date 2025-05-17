@@ -2983,7 +2983,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </profile>
         <profile id="4b6d-e4b8-2cfa-42a6" name="Immaterial Flare (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS PSYKER model is within 6&quot; of this model, each time that model Channels the Warp (pg 67), add 1 to the Psychic test result.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS PSYKER model is within 6&quot; of this model, each time that model Channels the Warp, add 1 to the Psychic test result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3135,26 +3135,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Aspiring Sorcerer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bb3-83ba-60b6-1dd5">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Rubric Marine" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d51d-eaa8-1f5f-a7c1">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Aspiring Sorcerer" hidden="false" id="a453-2220-cdf7-ef10">
@@ -3266,6 +3246,18 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
             <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
           </costs>
+          <profiles>
+            <profile name="Aspiring Sorcerer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bb3-83ba-60b6-1dd5">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Icon of Flame" hidden="false" id="d9f5-2270-b9b2-8060">
           <constraints>
@@ -3441,6 +3433,18 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <profiles>
+            <profile name="Rubric Marine" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d51d-eaa8-1f5f-a7c1">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -3464,16 +3468,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Scarab Occult Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8632-64da-6963-3506">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Implacable Guardians" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c2fe-faec-47bc-82e8">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit contains one or more PSYKER models, each time an attack is made against this unit, subtract 1 from the Wound roll.</characteristic>
@@ -3482,16 +3476,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         <profile id="1002-36f7-60ba-f4c9" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 4+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Scarab Occult Sorcerer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5d9a-5bc2-cd23-8b8e">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3592,10 +3576,22 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
             <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
           </costs>
+          <profiles>
+            <profile name="Scarab Occult Sorcerer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5d9a-5bc2-cd23-8b8e">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hellfyre missile rack" hidden="false" id="9cea-2e7-8711-11bf">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2be-be6c-b808-5a50"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-fb3f-936f-3dbf"/>
           </constraints>
           <modifiers>
             <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
@@ -3607,6 +3603,11 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="d2a4-fb3f-936f-3dbf">
+              <conditions>
+                <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <profiles>
@@ -3644,7 +3645,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
                       </characteristics>
@@ -3805,6 +3806,18 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Scarab Occult Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8632-64da-6963-3506">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -4416,7 +4429,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
         <profile id="ae1d-1e9-d6d0-1bed" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -4424,9 +4437,9 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Relic Hunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e13e-5ca3-104a-e002">
+        <profile name="Ambushing Predators" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e13e-5ca3-104a-e002">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, roll one D6 for each objective marker you control that has one or more units from your army with this ability within range of it: for each 4+, you gain 1 Cabal point.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent&apos;s turn. if this unit is more than 6&quot; horizontally away from all enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4634,6 +4647,13 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Scouts" id="4a56-bba6-e348-8e94" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hellblade [Legends]" hidden="false" id="c4ab-b52d-3ac0-5d56">
       <costs>
@@ -6044,7 +6064,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c126-d38a-7a74-0d91"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Fatecaster Greatbows" hidden="false" id="6bc0-866c-b4a6-32e5">
+            <selectionEntry type="model" import="true" name="Fatecaster Greatbow Enlightened" hidden="false" id="6bc0-866c-b4a6-32e5">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Fatecaster Greatbows" hidden="false" id="0060-31f7-d137-3f33" collective="true">
                   <constraints>
@@ -7028,7 +7048,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Enhancements" hidden="false" id="e0fd-5b6f-b173-3e12" collective="false" targetId="621d-b661-7461-4620" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="5e25-002b-8e12-b603" collective="false" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
@@ -7480,7 +7500,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <profiles>
             <profile name="Risen Rubricae" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e112-cc89-58bc-8e14">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. At the start of the Declare Battle Formations step, select either two **^^Rubricae^^** units from your army or one other **^^Rubricae^^** unit from your army; models in the selected units have the Infiltrators ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. At the start of the Declare Battle Formations step, select either two battleline **^^Rubricae^^** units from your army or one other **^^Rubricae^^** unit from your army; models in the selected units have the Infiltrators ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
