@@ -82,6 +82,7 @@ No **^^Scintillating Legions**^^ models from your army can be your **^^Warlord**
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Mutant" id="f5bc-077e-5247-5609" hidden="false"/>
+    <categoryEntry name="Sekhetar Robots" id="d5ae-b806-e782-2d62" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="87f0-0a14-9b6b-f367" name="Rituals reference" hidden="false" collective="false" import="true" type="upgrade">
@@ -504,6 +505,8 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink id="7af8-4079-bf9f-fbb7" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="11e4-fd16-5d70-d9fe" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="f1f8-72c8-0a7c-f03c" name="Ahriman" hidden="false" targetId="1b57-d2d1-a0ab-019e" primary="false"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="6b9a-7434-9407-441a" primary="false" name="Mounted"/>
+        <categoryLink targetId="c619-2086-bbcf-69c9" id="b578-0318-b499-d9ca" primary="false" name="Fly"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c951-3dc9-ab01-a0c0" name="Inferno bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1802,6 +1805,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink id="c706-4a20-c892-0b05" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="c396-e24e-472b-fc22" name="Exalted Sorcerer" hidden="false" targetId="010f-ca66-75a1-379b" primary="false"/>
         <categoryLink id="57c7-a1ec-4313-21ad" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="68fd-1cc6-66af-c9c1" primary="false" name="Mounted"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="aac1-5b0f-4802-1628" name="Arcane Fire" hidden="false" collective="false" import="true" type="upgrade">
@@ -3003,7 +3007,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
       <categoryLinks>
         <categoryLink id="7f3d-cc29-31c7-3d1b" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
         <categoryLink id="ece3-3900-2d57-4f00" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="true"/>
-        <categoryLink id="9db0-b514-8a5d-de3c" name="Daemon" hidden="false" targetId="9c0e-7e25-4580-e439" primary="false"/>
         <categoryLink id="c432-17c5-dbf1-0fef" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="c935-ce01-827c-ce37" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="8840-e04d-21f7-22c5" name="Mutalith Vortex Beast" hidden="false" targetId="d9c7-99b5-1d37-3021" primary="false"/>
@@ -5669,9 +5672,9 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="8951-c9ff-e3da-8159" primary="false" name="Faction: Thousand Sons"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="8c88-8004-2b89-a315" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="0d28-4422-8a62-7b5b" primary="false" name="Tzeentch"/>
-        <categoryLink targetId="cd-b0e0-7663-a659" id="4458-0aff-301e-88ac" primary="false" name="Rubric Marines"/>
         <categoryLink targetId="dbd4-63-af05-998" id="b7ab-c9a3-a709-f9d8" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="4a8e-a9a5-6b5b-d738" primary="false" name="Walker"/>
+        <categoryLink targetId="d5ae-b806-e782-2d62" id="fb0e-c7a0-9ce2-28bb" primary="false" name="Sekhetar Robots"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="2-4 Sekhetar Robots" hidden="false" id="86ec-da1c-cf6f-42de" defaultSelectionEntryId="1901-5e60-1564-2562">
