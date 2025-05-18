@@ -4524,168 +4524,170 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
               </constraints>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Brayhorn" hidden="false" id="fe46-0933-a1c0-ebca" defaultSelectionEntryId="5b9-7d59-48fd-b485">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ca2-24ab-f739-8ce7"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Tzaangor w/ Tzaangor blades" hidden="false" id="19a8-5e25-f5f4-ec64">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Brayhorn" id="5034-2050-1db1-d5fd" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e48-8ba8-cc3b-0fe9"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="70ab-203c-a217-c704" collective="true">
+                <selectionEntry type="model" import="true" name="Brayhorn w/ Tzaangor blades" hidden="false" id="454b-e95b-a6d6-3987">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="d1ef-a926-699f-8cc6" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06a4-1e67-c5c9-f8a0"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac4-e71a-3f3a-1527"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Tzaangor blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e07d-baac-5bac-8d37">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="171a-de26-b6c6-8876"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a66e-9c7c-7f6c-309c"/>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="10e6-6c85-0b48-47b5"/>
                   </constraints>
-                  <profiles>
-                    <profile name="Tzaangor blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b213-a479-932b-3e66">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Brayhorn w/ pistol and chainsword" hidden="false" id="d986-b432-9e55-6916">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="209e-8328-e588-22f0" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fd0-6007-a5a1-f093"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fbb-0b45-0598-7ae8"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="179f-dcb2-997f-d39f">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Pistol" id="8be0-0aad-1edc-ba52" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="9e9f-9274-c7b3-1274" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878f-cb66-f9cd-67eb"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c8-e116-7f19-a328"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="680b-3c24-2b39-a079">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="68d3-66ea-da0a-b34d" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Herd banner" id="1af9-e471-94b0-6210" hidden="false">
               <constraints>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4935-e5a0-4385-360c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1488-1827-1176-8208"/>
               </constraints>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Tzaangor w/ pistol and chainsword" hidden="false" id="ca4c-71d6-af11-91dd">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="fab2-d1b3-6cc3-0130" collective="true">
+                <selectionEntry type="model" import="true" name="Herd banner w/ Tzaangor blades" hidden="false" id="289c-d3f0-1584-2eb4">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="19fb-eb34-b4e9-a7c9" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe05-0b28-af45-0d8f"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1036-042a-914b-5885"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Tzaangor blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bd96-f59c-b6aa-0f49">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6f4-bb19-8500-f9df"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5d1-5b3b-1c7b-cc72"/>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="334e-7834-13f0-fd9f"/>
                   </constraints>
-                  <profiles>
-                    <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ef5b-6abe-9607-1b84">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Pistol" hidden="false" type="rule" id="1a35-2c5a-e3cc-a457" targetId="8bf7-8812-923d-29e4"/>
-                  </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="6e51-4693-9ad8-1a1b" collective="true">
+                <selectionEntry type="model" import="true" name="Herd banner w/ pistol and chainsword" hidden="false" id="56e6-dff7-7762-517e">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="9fb7-985e-6fe4-d86a" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7477-3770-9512-26b5"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e24-5125-2036-a0fe"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0b0e-422c-993c-c8f8">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Pistol" id="a618-659a-ab02-6f52" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="9257-063d-20e7-5748" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e164-6592-0e14-0407"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e92-0a9d-4d06-61da"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c32e-2372-0c41-768e">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d37a-2d56-7882-b7ca"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58c5-ebbe-09df-070a"/>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4e59-73a3-58c4-3d53" includeChildSelections="false"/>
                   </constraints>
-                  <profiles>
-                    <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0dd5-7ba7-1b79-e40d">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
                 </selectionEntry>
               </selectionEntries>
-              <constraints>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="0d5b-9b48-3219-9218" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Herd banner" hidden="false" id="2d17-a2c1-8214-f9a7" defaultSelectionEntryId="5b9-7d59-48fd-b485">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c887-9288-a825-9730"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Tzaangor w/ Tzaangor blades" hidden="false" id="3799-772f-11f4-c5c0">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="3449-4cf1-b2f8-2e01" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cb9-fdbb-16d6-39d4"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c84-fd21-c9e8-aeb3"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Tzaangor blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5bd3-1af1-64b1-6760">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="0d93-8a41-dc7f-445c"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Tzaangor w/ pistol and chainsword" hidden="false" id="66c9-4c76-5bd1-999a">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="0d16-22c4-86f0-371d" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0744-bcb3-9313-6fda"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abd7-6638-76fb-cb2a"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="815b-6990-eea6-ae8b">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Pistol" hidden="false" type="rule" id="11c1-813d-98d0-46aa" targetId="8bf7-8812-923d-29e4"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="6ce7-565b-5e00-b09b" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33c2-81ef-aaec-fae5"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c397-8895-ec46-a97d"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a809-f58e-2327-965d">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="8201-52fe-7017-8659" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
