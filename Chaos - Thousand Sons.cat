@@ -4504,40 +4504,6 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Wargear" hidden="false" id="70a4-9194-b0ad-ef03">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Brayhorn" hidden="false" id="1e68-75a-f434-7977">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1653-f09a-70a-4ab"/>
-              </constraints>
-              <profiles>
-                <profile name="Brayhorn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="346-999f-b6cd-5017">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls made for the bearer’s unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <associations>
-                <association min="1" max="1" scope="f5b9-50c8-5c60-d8ea" childId="4e4e-d54e-2597-521e" name="Brayhorn" id="e2ea-94fb-6c09-48b0" includeChildSelections="true"/>
-              </associations>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Herd banner" hidden="false" id="a61b-434-6817-679a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c966-12ee-e286-174"/>
-              </constraints>
-              <profiles>
-                <profile name="Herd banner" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d021-a400-9df6-2f4c">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer&apos;s unit is within range of one or more objective markers you control, improve the Leadership characteristic of models in the bearer&apos;s unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <associations>
-                <association min="1" max="1" scope="f5b9-50c8-5c60-d8ea" childId="4e4e-d54e-2597-521e" name="Herd Banner" id="4821-422f-ef20-0729"/>
-              </associations>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Twistbray" hidden="false" id="255b-146d-ca61-55fb">
@@ -4623,6 +4589,36 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e2f-36b3-576f-199d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e2f-36b3-576f-199d-max" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Brayhorn" hidden="false" id="dd62-3a74-5024-cd06">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a1-ecf4-16c7-863b"/>
+          </constraints>
+          <profiles>
+            <profile name="Brayhorn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b83f-7b7d-9447-d11b">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls made for the bearer’s unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <associations>
+            <association min="1" max="1" scope="f5b9-50c8-5c60-d8ea" childId="4e4e-d54e-2597-521e" name="Brayhorn" id="fe90-91a2-2c0b-1fd6" includeChildSelections="true"/>
+          </associations>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Herd banner" hidden="false" id="4fd2-5216-cbe0-7e0e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e44-c2ae-57de-7ae7"/>
+          </constraints>
+          <profiles>
+            <profile name="Herd banner" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="caea-2efb-8461-5976">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer&apos;s unit is within range of one or more objective markers you control, improve the Leadership characteristic of models in the bearer&apos;s unit by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <associations>
+            <association min="1" max="1" scope="f5b9-50c8-5c60-d8ea" childId="4e4e-d54e-2597-521e" name="Herd Banner" id="fb86-e50f-35c8-3f46"/>
+          </associations>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
