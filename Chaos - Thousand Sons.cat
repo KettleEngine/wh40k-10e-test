@@ -830,6 +830,11 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
           </modifiers>
         </infoLink>
         <infoLink id="b1ee-18a1-6187-0c6f" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
+        <infoLink name="Sustained Hits" id="eadc-3640-77ee-3c11" hidden="false" targetId="1897-c22c-9597-12b1" type="rule">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3849-e9db-1a61-4439" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -933,7 +938,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">SUSTAINED HITS 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1009,6 +1014,11 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
           </modifiers>
         </infoLink>
         <infoLink id="efcf-2dd2-10ff-4ac0" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
+        <infoLink name="Sustained Hits" id="1ce7-80de-6724-1575" hidden="false" targetId="1897-c22c-9597-12b1" type="rule">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1aaa-4fd4-3a5a-1075" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
