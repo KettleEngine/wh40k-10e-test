@@ -4530,7 +4530,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e48-8ba8-cc3b-0fe9"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Brayhorn w/ Tzaangor blades" hidden="false" id="454b-e95b-a6d6-3987">
+                <selectionEntry type="model" import="true" name="Tzaangor Brayhorn w/ Tzaangor blades" hidden="false" id="454b-e95b-a6d6-3987">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="d1ef-a926-699f-8cc6" collective="true">
                       <constraints>
@@ -4556,7 +4556,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                     <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="10e6-6c85-0b48-47b5"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Brayhorn w/ pistol and chainsword" hidden="false" id="d986-b432-9e55-6916">
+                <selectionEntry type="model" import="true" name="Tzaangor Brayhorn w/ pistol and chainsword" hidden="false" id="d986-b432-9e55-6916">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="209e-8328-e588-22f0" collective="true">
                       <constraints>
@@ -4611,7 +4611,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1488-1827-1176-8208"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Herd banner w/ Tzaangor blades" hidden="false" id="289c-d3f0-1584-2eb4">
+                <selectionEntry type="model" import="true" name="Tzaangor Herd Banner w/ Tzaangor blades" hidden="false" id="289c-d3f0-1584-2eb4">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="19fb-eb34-b4e9-a7c9" collective="true">
                       <constraints>
@@ -4637,7 +4637,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                     <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="334e-7834-13f0-fd9f"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Herd banner w/ pistol and chainsword" hidden="false" id="56e6-dff7-7762-517e">
+                <selectionEntry type="model" import="true" name="Tzaangor Herd Banner w/ pistol and chainsword" hidden="false" id="56e6-dff7-7762-517e">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="9fb7-985e-6fe4-d86a" collective="true">
                       <constraints>
