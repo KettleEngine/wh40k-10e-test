@@ -82,6 +82,7 @@ No **^^Scintillating Legions**^^ models from your army can be your **^^Warlord**
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Mutant" id="f5bc-077e-5247-5609" hidden="false"/>
+    <categoryEntry name="Sekhetar Robots" id="d5ae-b806-e782-2d62" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="87f0-0a14-9b6b-f367" name="Rituals reference" hidden="false" collective="false" import="true" type="upgrade">
@@ -504,6 +505,8 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink id="7af8-4079-bf9f-fbb7" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="11e4-fd16-5d70-d9fe" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="f1f8-72c8-0a7c-f03c" name="Ahriman" hidden="false" targetId="1b57-d2d1-a0ab-019e" primary="false"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="6b9a-7434-9407-441a" primary="false" name="Mounted"/>
+        <categoryLink targetId="c619-2086-bbcf-69c9" id="b578-0318-b499-d9ca" primary="false" name="Fly"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c951-3dc9-ab01-a0c0" name="Inferno bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -540,7 +543,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <profile id="f7d3-259c-714e-e397" name="Transmogrifying Blast" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
@@ -1361,7 +1364,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </profile>
         <profile id="8c03-6cc3-c8ca-03c3" name="Scuttling Walker" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly MONSTER and  EHICLE models and sections of terrain features that are 4&quot; or less in height.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly MONSTER and VEHICLE models and sections of terrain features that are 4&quot; or less in height.</characteristic>
           </characteristics>
         </profile>
         <profile id="a623-6e45-bb95-3eb6" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -1382,6 +1385,11 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
           </modifiers>
         </infoLink>
         <infoLink id="7775-6118-4b17-8408" name="Damaged: 1-5 wounds remaining" hidden="false" targetId="cb08-29a7-4ffc-2561" type="profile"/>
+        <infoLink name="Feel No Pain" id="d74b-f103-7234-891c" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bbaa-d8d3-a4bb-10b2" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1797,6 +1805,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink id="c706-4a20-c892-0b05" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="c396-e24e-472b-fc22" name="Exalted Sorcerer" hidden="false" targetId="010f-ca66-75a1-379b" primary="false"/>
         <categoryLink id="57c7-a1ec-4313-21ad" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="68fd-1cc6-66af-c9c1" primary="false" name="Mounted"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="aac1-5b0f-4802-1628" name="Arcane Fire" hidden="false" collective="false" import="true" type="upgrade">
@@ -2132,7 +2141,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </profile>
         <profile id="d704-4523-7eed-b79c" name="Devoted to Destruction" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with two melee weapons in addition to its close combat weapon, add2 to the Attacks characteristic of those two weapons.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with two melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristic of those two weapons.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca1f-7520-909f-d024">
@@ -2364,7 +2373,11 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
       <selectionEntries>
@@ -2946,7 +2959,11 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
       </costs>
     </selectionEntry>
@@ -2974,7 +2991,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </profile>
         <profile id="4b6d-e4b8-2cfa-42a6" name="Immaterial Flare (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS PSYKER model is within 6&quot; of this model, each time that model Channels the Warp (pg 67], add 1 to the Psychic test result.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS PSYKER model is within 6&quot; of this model, each time that model Channels the Warp, add 1 to the Psychic test result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2994,7 +3011,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
       <categoryLinks>
         <categoryLink id="7f3d-cc29-31c7-3d1b" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
         <categoryLink id="ece3-3900-2d57-4f00" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="true"/>
-        <categoryLink id="9db0-b514-8a5d-de3c" name="Daemon" hidden="false" targetId="9c0e-7e25-4580-e439" primary="false"/>
         <categoryLink id="c432-17c5-dbf1-0fef" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="c935-ce01-827c-ce37" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="8840-e04d-21f7-22c5" name="Mutalith Vortex Beast" hidden="false" targetId="d9c7-99b5-1d37-3021" primary="false"/>
@@ -3058,7 +3074,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             </profile>
             <profile id="47bc-89de-6dac-8685" name="➤ Warp vortex - beam" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
@@ -3069,7 +3085,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             </profile>
             <profile id="ed81-7c6e-76e6-4836" name="➤ Warp vortex - torrent" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
@@ -3455,20 +3471,9 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Scarab Occult Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8632-64da-6963-3506">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Implacable Guardians" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c2fe-faec-47bc-82e8">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit contains one or more PSYKER models, each time an attack is made against this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic, subtract 1 from the
-Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit contains one or more PSYKER models, each time an attack is made against this unit, subtract 1 from the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="1002-36f7-60ba-f4c9" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -3481,8 +3486,18 @@ Wound roll.</characteristic>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scarab Occult Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8632-64da-6963-3506">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
@@ -3522,6 +3537,24 @@ Wound roll.</characteristic>
                 <infoLink id="2572-21e7-ecb3-5242" name="Psychic" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Malefic Curse" hidden="false" id="6ed8-3a4f-acfb-42ba">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d45b-0163-83bc-3e06"/>
+              </constraints>
+              <profiles>
+                <profile name="Malefic Curse" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2a3d-19dc-8489-6275">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti Infantry 4+, Devastating Wounds, Psychic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon" hidden="false" id="1c22-842f-79af-4288" defaultSelectionEntryId="cdf3-4e74-480-7dc3">
@@ -3552,24 +3585,6 @@ Wound roll.</characteristic>
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Malefic Curse" hidden="false" id="6ed8-3a4f-acfb-42ba">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d45b-0163-83bc-3e06"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Malefic Curse" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2a3d-19dc-8489-6275">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti Infantry 4+, Devastating Wounds, Psychic</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3587,7 +3602,7 @@ Wound roll.</characteristic>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hellfyre missile rack" hidden="false" id="9cea-2e7-8711-11bf">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2be-be6c-b808-5a50"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-fb3f-936f-3dbf"/>
           </constraints>
           <modifiers>
             <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
@@ -3599,6 +3614,11 @@ Wound roll.</characteristic>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="d2a4-fb3f-936f-3dbf">
+              <conditions>
+                <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <profiles>
@@ -3636,7 +3656,7 @@ Wound roll.</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
                       </characteristics>
@@ -4270,6 +4290,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink targetId="b188-114f-6ba5-79a1" id="8f61-b1e9-6220-851d" primary="false" name="Tzeentch"/>
         <categoryLink targetId="527e-a024-3c7f-e5df" id="bfc-c62f-749e-2892" primary="false" name="Tzaangor Shaman"/>
         <categoryLink targetId="f5bc-077e-5247-5609" id="7003-8cea-c537-6017" primary="false" name="Mutant"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b747-6eb4-37dd-95fd" primary="false" name="Infantry"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Leader" hidden="false" type="rule" id="37cd-87e1-1d26-a426" targetId="b4dd-3e1f-41cb-218f"/>
@@ -4293,7 +4314,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e1d-5767-7ee4-befb">
@@ -4305,7 +4326,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         </profile>
         <profile id="3e8b-2704-e4de-3f05" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 6+ invulnerable save.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4407,7 +4428,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
         <profile id="ae1d-1e9-d6d0-1bed" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -4415,9 +4436,9 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Relic Hunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e13e-5ca3-104a-e002">
+        <profile name="Ambushing Predators" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e13e-5ca3-104a-e002">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, roll one D6 for each objective marker you control that has one or more units from your army with this ability within range of it: for each 4+, you gain 1 Cabal point.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent&apos;s turn. if this unit is more than 6&quot; horizontally away from all enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4442,7 +4463,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                         <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                       </characteristics>
@@ -4503,6 +4524,170 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Tzaangor Brayhorn" id="5034-2050-1db1-d5fd" hidden="false" defaultSelectionEntryId="454b-e95b-a6d6-3987">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e48-8ba8-cc3b-0fe9"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Tzaangor Brayhorn w/ Tzaangor blades" hidden="false" id="454b-e95b-a6d6-3987">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="d1ef-a926-699f-8cc6" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06a4-1e67-c5c9-f8a0"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac4-e71a-3f3a-1527"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Tzaangor blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e07d-baac-5bac-8d37">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="10e6-6c85-0b48-47b5"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Tzaangor Brayhorn w/ pistol and chainsword" hidden="false" id="d986-b432-9e55-6916">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="209e-8328-e588-22f0" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fd0-6007-a5a1-f093"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fbb-0b45-0598-7ae8"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="179f-dcb2-997f-d39f">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Pistol" id="8be0-0aad-1edc-ba52" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="9e9f-9274-c7b3-1274" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878f-cb66-f9cd-67eb"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c8-e116-7f19-a328"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="680b-3c24-2b39-a079">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="68d3-66ea-da0a-b34d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Tzaangor Herd Banner" id="1af9-e471-94b0-6210" hidden="false" defaultSelectionEntryId="289c-d3f0-1584-2eb4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1488-1827-1176-8208"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Tzaangor Herd Banner w/ Tzaangor blades" hidden="false" id="289c-d3f0-1584-2eb4">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="19fb-eb34-b4e9-a7c9" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe05-0b28-af45-0d8f"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1036-042a-914b-5885"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Tzaangor blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bd96-f59c-b6aa-0f49">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="334e-7834-13f0-fd9f"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Tzaangor Herd Banner w/ pistol and chainsword" hidden="false" id="56e6-dff7-7762-517e">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="9fb7-985e-6fe4-d86a" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7477-3770-9512-26b5"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e24-5125-2036-a0fe"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0b0e-422c-993c-c8f8">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Pistol" id="a618-659a-ab02-6f52" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="9257-063d-20e7-5748" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e164-6592-0e14-0407"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e92-0a9d-4d06-61da"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c32e-2372-0c41-768e">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4e59-73a3-58c4-3d53" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
@@ -4590,37 +4775,14 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e2f-36b3-576f-199d-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Brayhorn" hidden="false" id="dd62-3a74-5024-cd06">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a1-ecf4-16c7-863b"/>
-          </constraints>
-          <profiles>
-            <profile name="Brayhorn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b83f-7b7d-9447-d11b">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls made for the bearer’s unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <associations>
-            <association min="1" max="1" scope="f5b9-50c8-5c60-d8ea" childId="4e4e-d54e-2597-521e" name="Brayhorn" id="fe90-91a2-2c0b-1fd6" includeChildSelections="true"/>
-          </associations>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Herd banner" hidden="false" id="4fd2-5216-cbe0-7e0e">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e44-c2ae-57de-7ae7"/>
-          </constraints>
-          <profiles>
-            <profile name="Herd banner" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="caea-2efb-8461-5976">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer&apos;s unit is within range of one or more objective markers you control, improve the Leadership characteristic of models in the bearer&apos;s unit by 1.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <associations>
-            <association min="1" max="1" scope="f5b9-50c8-5c60-d8ea" childId="4e4e-d54e-2597-521e" name="Herd Banner" id="fb86-e50f-35c8-3f46"/>
-          </associations>
-        </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Scouts" id="4a56-bba6-e348-8e94" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hellblade [Legends]" hidden="false" id="c4ab-b52d-3ac0-5d56">
       <costs>
@@ -5606,7 +5768,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
       <modifiers>
         <modifier type="set" value="180" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="greaterThan" value="5" field="selections" scope="8105-2e1f-4f48-2d14" childId="model" shared="true" includeChildSelections="true"/>
+            <condition type="greaterThan" value="2" field="selections" scope="8105-2e1f-4f48-2d14" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5636,9 +5798,9 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="8951-c9ff-e3da-8159" primary="false" name="Faction: Thousand Sons"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="8c88-8004-2b89-a315" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="0d28-4422-8a62-7b5b" primary="false" name="Tzeentch"/>
-        <categoryLink targetId="cd-b0e0-7663-a659" id="4458-0aff-301e-88ac" primary="false" name="Rubric Marines"/>
         <categoryLink targetId="dbd4-63-af05-998" id="b7ab-c9a3-a709-f9d8" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="4a8e-a9a5-6b5b-d738" primary="false" name="Walker"/>
+        <categoryLink targetId="d5ae-b806-e782-2d62" id="fb0e-c7a0-9ce2-28bb" primary="false" name="Sekhetar Robots"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="2-4 Sekhetar Robots" hidden="false" id="86ec-da1c-cf6f-42de" defaultSelectionEntryId="1901-5e60-1564-2562">
@@ -5840,7 +6002,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
       <profiles>
         <profile id="ab34-5755-915f-d6ea" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
         <profile name="Tzaangor Enlightened" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="392f-bb74-4551-7b05">
@@ -5979,7 +6141,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
       <profiles>
         <profile id="2ce5-adec-cb94-bea6" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
         <profile name="Tzaangor Enlightened w/ Fatecaster Greatbows" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fa79-ea62-e3fd-252d">
@@ -6005,33 +6167,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7694-fd2f-cac6-7cd9"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Close combat weapon" hidden="false" id="1d61-07de-3537-d9f5">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="b3a3-4f46-03ba-092e" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c8e-0958-ca44-c3c9"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="724e-d679-a442-255b"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="79c1-3ecf-741e-4a26">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c126-d38a-7a74-0d91"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Pistol and chainsword Enlightened" hidden="false" id="6bc0-866c-b4a6-32e5">
+            <selectionEntry type="model" import="true" name="Fatecaster Greatbow Enlightened" hidden="false" id="6bc0-866c-b4a6-32e5">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Fatecaster Greatbows" hidden="false" id="0060-31f7-d137-3f33" collective="true">
                   <constraints>
@@ -6056,6 +6192,25 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                     <infoLink name="Lethal Hits" id="9da5-7b10-6240-4c9a" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                     <infoLink name="Ignores Cover" id="3bb3-fbca-a7a3-4a10" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
                   </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="b3a3-4f46-03ba-092e" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c8e-0958-ca44-c3c9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="724e-d679-a442-255b"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="79c1-3ecf-741e-4a26">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -6742,7 +6897,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, if this model is on the battlefield, take a Leadership test for this model; if that test is passed, you gain 1CP.</characteristic>
           </characteristics>
         </profile>
-        <profile name="One Head Looks Back (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="true" id="83fb-57c8-feaa-b2c4">
+        <profile name="One Head Looks Back (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="83fb-57c8-feaa-b2c4">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12&quot; of this model, increase the cost of that use of that Stratagem by 1CP.</characteristic>
           </characteristics>
@@ -7015,7 +7170,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Enhancements" hidden="false" id="e0fd-5b6f-b173-3e12" collective="false" targetId="621d-b661-7461-4620" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="5e25-002b-8e12-b603" collective="false" targetId="25f1-9949-5ee8-8b93" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
@@ -7082,7 +7237,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
     <selectionEntryGroup id="25f1-9949-5ee8-8b93" name="Enhancements" hidden="false" collective="false" import="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdb1-2496-cd1c-a0d4" includeChildSelections="false"/>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fe2-824a-bb3e-3c42" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="4d47-238f-ec08-46bf" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Lord of Forbidden Lore" hidden="false" id="b846-443f-45e9-d2f5">
@@ -7467,7 +7622,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <profiles>
             <profile name="Risen Rubricae" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e112-cc89-58bc-8e14">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. At the start of the Declare Battle Formations step, select either two **^^Rubricae^^** units from your army or one other **^^Rubricae^^** unit from your army; models in the selected units have the Infiltrators ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Thousand Sons^^** model only. At the start of the Declare Battle Formations step, select either two battleline **^^Rubricae^^** units from your army or one other **^^Rubricae^^** unit from your army; models in the selected units have the Infiltrators ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
