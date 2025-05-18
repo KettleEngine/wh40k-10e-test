@@ -4525,7 +4525,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Brayhorn" id="5034-2050-1db1-d5fd" hidden="false" defaultSelectionEntryId="454b-e95b-a6d6-3987">
+            <selectionEntryGroup name="Tzaangor Brayhorn" id="5034-2050-1db1-d5fd" hidden="false" defaultSelectionEntryId="454b-e95b-a6d6-3987">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e48-8ba8-cc3b-0fe9"/>
               </constraints>
@@ -4606,7 +4606,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Herd banner" id="1af9-e471-94b0-6210" hidden="false" defaultSelectionEntryId="289c-d3f0-1584-2eb4">
+            <selectionEntryGroup name="Tzaangor Herd Banner" id="1af9-e471-94b0-6210" hidden="false" defaultSelectionEntryId="289c-d3f0-1584-2eb4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1488-1827-1176-8208"/>
               </constraints>
